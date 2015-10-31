@@ -1,0 +1,52 @@
+//
+    panel.jade　
+    Copyright (c) 2015 7ThCode.
+    This software is released under the MIT License.
+    http://opensource.org/licenses/mit-license.php
+
+- var content = {config:"設定", regist:"登録", login:"ログイン", name:"名前", password:"パスワード", required:"必ず入力してください", toolong:"もうすこし短くしてください", editor:"ドクター(編集権限)", viewer:"ナース(参照権限)",update:"更新", save:"保存", cancel:"キャンセル", changepass:"パスワード変更" }
+
+md-content.background
+    md-card
+        md-card-content
+            h1.md-headline #{content.config}
+
+        md-card-content(layout="row")
+            md-button.md-fab.md-accent(ng-click='showNotificationDialog()', aria-label="", ng-if="type == 'Admin' || type == 'Editor'")
+                ng-md-icon.iconfill(icon="save", size="46", id="icon")
+                md-tooltip #{content.save}
+
+            md-button.md-fab.md-warn(ng-click="showConfigSheet()", aria-label="Done", ng-if="type == 'Admin' || type == 'Editor'")
+                ng-md-icon.iconfill(icon="{{icon}}", size="46", options='{"rotation": "none"}')
+                md-tooltip Open Tools...
+
+    md-card
+        md-card-content
+            md-input-container
+                label Connection
+                input(ng-model="config.connection",data-ng-required="true", name="connection", placeholder='DB Connecton Uri', type="text", md-maxlength="100")
+
+        md-card-content
+            md-input-container
+                label root user name
+                input(ng-model="config.user",data-ng-required="true", name="user", placeholder='Key', type="text", md-maxlength="50")
+
+        md-card-content
+            md-input-container
+                label root user password
+                input(ng-model="config.password",data-ng-required="true", name="password", placeholder='Key', type="text", md-maxlength="50")
+
+        md-card-content
+            md-input-container
+                label Session Key
+                input(ng-model="config.sessionkey",data-ng-required="true", name="sessionkey", placeholder='Session Key', type="text", md-maxlength="50")
+
+        md-card-content
+            md-input-container
+                label Password Key
+                input(ng-model="config.key1",data-ng-required="true", name="key1", placeholder='Key', type="text", md-maxlength="50")
+
+        md-card-content
+            md-input-container
+                label Account Key
+                input(ng-model="config.key2",data-ng-required="true", name="key2", placeholder='Key', type="text", md-maxlength="50")

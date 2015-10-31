@@ -1,0 +1,80 @@
+//
+    patients.jade　
+    Copyright (c) 2015 7ThCode.
+    This software is released under the MIT License.
+    http://opensource.org/licenses/mit-license.php
+
+md-content.background
+    md-progress-circular.md-accent(ng-show="progress", md-mode="indeterminate", style="position:absolute;top:50%;left:50%;")
+    md-card.box-edge
+        md-card-content.layout-padding
+            h1.md-headline 患者
+            div(layout="row", layout-align="start center", hide-gt-sm)
+                div(layout="column")
+                    div
+
+                        md-button.md-fab(ng-click="showPatientAcceptDialog()", aria-label="", style="background-color:#5540fc;")
+                            ng-md-icon(icon="person_add", aria-label="Patients", style="position:relative;top:6px;fill:#abcdef" size="42")
+                            md-tooltip 追加...
+                    div
+                        md-button.md-fab.md-warn(ng-click="showTotalSheet()", aria-label="Done", ng-if="type == 'Admin' || type == 'Editor'")
+                            ng-md-icon.iconfill(icon="{{icon}}", size="46", options='{"rotation": "none"}')
+                            md-tooltip Open Tools...
+
+                    div
+                        md-autocomplete(md-no-cache="noCache", md-selected-item="selectedItem", md-search-text-change="searchTextChange(searchText)", md-search-text="searchText", md-selected-item-change="selectedItemChange(item)", md-items="item in querySearch(searchText)", md-item-text="item.Information.name",md-min-length="0", placeholder="Name", md-menu-class="autocomplete-custom-template")
+                            md-item-template
+                                span(class="item-title")
+                                    span(ng-bind="item.Information.name")
+
+            div(layout="row", layout-align="start center" hide-sm)
+                div(layout="row")
+                    md-button.md-fab(ng-click="showPatientAcceptDialog()", aria-label="", style="background-color:#5540fc;")
+                        ng-md-icon(icon="person_add", aria-label="Patients", style="position:relative;top:6px;fill:#abcdef" size="42")
+                        md-tooltip 追加...
+
+                div(layout="row")
+                    md-button.md-fab.md-warn(ng-click="showTotalSheet()", aria-label="Done", ng-if="type == 'Admin' || type == 'Editor'")
+                        ng-md-icon.iconfill(icon="{{icon}}", size="46", options='{"rotation": "none"}')
+                        md-tooltip Open Tools...
+
+
+                div(layout="row")
+                    md-autocomplete(md-no-cache="noCache", md-selected-item="selectedItem", md-search-text-change="searchTextChange(searchText)", md-search-text="searchText", md-selected-item-change="selectedItemChange(item)", md-items="item in querySearch(searchText)", md-item-text="item.Information.name",md-min-length="0", placeholder="Name", md-menu-class="autocomplete-custom-template")
+                        md-item-template
+                            span(class="item-title")
+                                span(ng-bind="item.Information.name")
+
+    md-list(hide-gt-sm)
+        md-list-item(ng-repeat="patient in patients")
+            md-card(layout="row", flex)
+                md-card-content(layout="row", layout-align="start center", flex)
+                    div(flex="20",layout="row", layout-align="start center")
+                        md-button.md-fab.md-accent.md-mini(ng-show="patient.Input != null", ng-click="showPatientDescription(patient._id)", aria-label="Description")
+                            ng-md-icon(icon="assignment_ind", style="position:relative;top:6px;fill:#abcdef", size="22")
+                            md-tooltip Description...
+                    div.md-body-2(layout="column", flex="20", ng-bind="patient.Category")
+                    div(layout="column", flex="20")
+                        span(style="font-size:9px;", ng-bind="patient.Information.kana")
+                        span.md-body-2(ng-bind="patient.Information.name")
+                    div(layout="column", flex="20")
+                        span.md-body-2(style="font-size:9px;", ng-bind="patient.Information.insurance")
+                        span.md-body-2(ng-bind="patient.Date | date:'yy-MM-dd HH:mm'")
+                    div.md-body-2(layout="row", flex="20", layout-align="end center", ng-bind="patient.Status | status")
+
+    md-list(hide-sm)
+        md-list-item(ng-repeat="patient in patients")
+            md-card(layout="row", flex)
+                md-card-content(layout="row", layout-align="start center", flex)
+                    div(flex="20",layout="row", layout-align="start center")
+                        md-button.md-fab.md-accent(ng-show="patient.Input != null", ng-click="showPatientDescription(patient._id)", aria-label="Description")
+                            ng-md-icon(icon="assignment_ind", style="position:relative;top:6px;fill:#abcdef", size="42")
+                            md-tooltip Description...
+                    div(layout="column", flex="20", ng-bind="patient.Category")
+                    div(layout="column", flex="20")
+                        span(style="font-size:9px;", ng-bind="patient.Information.kana")
+                        span.md-subhead(ng-bind="patient.Information.name")
+                    div(layout="column", flex="20")
+                        span.md-subhead(style="font-size:9px;", ng-bind="patient.Information.insurance")
+                        span.md-subhead(ng-bind="patient.Date | date:'yyyy-MM-dd HH:mm:ss'")
+                    div(layout="row", flex="20", layout-align="end center", ng-bind="patient.Status | status")
