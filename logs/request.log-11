@@ -1,0 +1,127 @@
+[2015-10-11 14:09:57.003] [INFO] request - -----------------------Invoke---------------------
+[2015-10-11 14:09:57.009] [INFO] request - log4js Ok.
+[2015-10-11 14:09:57.010] [INFO] request - logger Ok.
+[2015-10-11 14:09:57.010] [INFO] request - express Ok.
+[2015-10-11 14:09:57.010] [INFO] request - fs Ok.
+[2015-10-11 14:09:57.010] [INFO] request - config Ok.
+[2015-10-11 14:09:57.010] [INFO] request - path Ok.
+[2015-10-11 14:09:57.098] [INFO] request - favicon Ok.
+[2015-10-11 14:09:57.105] [INFO] request - cookieParser Ok.
+[2015-10-11 14:09:57.167] [INFO] request - bodyParser Ok.
+[2015-10-11 14:09:57.228] [INFO] request - passport Ok.
+[2015-10-11 14:09:57.272] [INFO] request - LocalStrategy Ok.
+[2015-10-11 14:09:57.748] [INFO] request - session Ok.
+[2015-10-11 14:20:18.566] [INFO] request - -----------------------Invoke---------------------
+[2015-10-11 14:20:21.043] [INFO] request - Index.js Start.
+[2015-10-11 14:20:18.569] [INFO] request - log4js Ok.
+[2015-10-11 14:20:21.062] [INFO] request - -----------------------Start---------------------
+[2015-10-11 14:20:18.569] [INFO] request - logger Ok.
+[2015-10-11 14:20:21.063] [INFO] request - routes Ok.
+[2015-10-11 14:20:18.569] [INFO] request - express Ok.
+[2015-10-11 14:20:21.063] [INFO] request - Jade Start.
+[2015-10-11 14:20:18.569] [INFO] request - fs Ok.
+[2015-10-11 14:20:21.279] [INFO] request - mongoose Ok.
+[2015-10-11 14:20:18.569] [INFO] request - config Ok.
+[2015-10-11 14:20:21.381] [INFO] request - MongoStore Ok.
+[2015-10-11 14:20:18.570] [INFO] request - path Ok.
+[2015-10-11 14:20:21.417] [FATAL] request - Access Log OK.
+[2015-10-11 14:20:18.607] [INFO] request - favicon Ok.
+[2015-10-11 14:20:21.418] [INFO] request - Account Ok.
+[2015-10-11 14:20:18.616] [INFO] request - cookieParser Ok.
+[2015-10-11 14:20:18.683] [INFO] request - bodyParser Ok.
+[2015-10-11 14:20:18.746] [INFO] request - passport Ok.
+[2015-10-11 14:20:18.779] [INFO] request - LocalStrategy Ok.
+[2015-10-11 14:20:19.115] [INFO] request - session Ok.
+[2015-10-11 14:20:22.373] [TRACE] request - |enter FindOne 1000
+[2015-10-11 14:20:22.374] [TRACE] request - |exit FindOne 1000
+[2015-10-11 14:20:33.745] [TRACE] request - begin /patient/query/:query
+[2015-10-11 14:20:33.745] [TRACE] request - |enter Guard 
+[2015-10-11 14:20:33.745] [TRACE] request - |enter Authenticate 5000
+[2015-10-11 14:20:33.748] [TRACE] request - |exit Authenticate 5000
+[2015-10-11 14:20:33.748] [TRACE] request - |exit Guard 
+[2015-10-11 14:20:33.753] [TRACE] request - |enter Find 5000
+[2015-10-11 14:20:33.755] [TRACE] request - end /patient/query/:query
+[2015-10-11 14:20:33.755] [TRACE] request - |exit Find 5000
+[2015-10-11 14:23:04.044] [TRACE] request - begin /config
+[2015-10-11 14:23:04.044] [TRACE] request - |enter Guard 
+[2015-10-11 14:23:04.045] [TRACE] request - |enter Authenticate 16000
+[2015-10-11 14:23:04.046] [TRACE] request - end /config
+[2015-10-11 14:23:04.046] [TRACE] request - |exit Authenticate 16000
+[2015-10-11 14:23:04.046] [TRACE] request - |exit Guard 
+[2015-10-11 14:23:06.014] [TRACE] request - begin /view/:id
+[2015-10-11 14:23:06.014] [TRACE] request - |enter Guard 
+[2015-10-11 14:23:06.014] [TRACE] request - |enter Authenticate 23000
+[2015-10-11 14:23:06.015] [TRACE] request - |exit Authenticate 23000
+[2015-10-11 14:23:06.015] [TRACE] request - |exit Guard 
+[2015-10-11 14:23:06.038] [TRACE] request - |enter Find 23000
+[2015-10-11 14:23:06.049] [TRACE] request - end /view/:id
+[2015-10-11 14:23:06.049] [TRACE] request - |exit Find 23000
+[2015-10-11 14:23:07.592] [TRACE] request - begin /account/query/:query
+[2015-10-11 14:23:07.592] [TRACE] request - |enter Guard 
+[2015-10-11 14:23:07.592] [TRACE] request - |exit Guard 
+[2015-10-11 14:23:07.620] [TRACE] request - |enter Find 14000
+[2015-10-11 14:23:07.622] [TRACE] request - end /account/query/:query
+[2015-10-11 14:23:07.622] [TRACE] request - |exit Find 14000
+[2015-10-11 14:23:23.057] [INFO] request - SIGINT.
+[2015-10-11 16:20:27.852] [INFO] request - -----------------------Invoke---------------------
+[2015-10-11 16:20:30.849] [INFO] request - Index.js Start.
+[2015-10-11 16:20:27.856] [INFO] request - log4js Ok.
+[2015-10-11 16:20:30.877] [INFO] request - -----------------------Start---------------------
+[2015-10-11 16:20:27.856] [INFO] request - logger Ok.
+[2015-10-11 16:20:30.878] [INFO] request - routes Ok.
+[2015-10-11 16:20:27.856] [INFO] request - express Ok.
+[2015-10-11 16:20:30.879] [INFO] request - Jade Start.
+[2015-10-11 16:20:27.856] [INFO] request - fs Ok.
+[2015-10-11 16:20:31.617] [INFO] request - mongoose Ok.
+[2015-10-11 16:20:27.857] [INFO] request - config Ok.
+[2015-10-11 16:20:31.925] [INFO] request - MongoStore Ok.
+[2015-10-11 16:20:27.857] [INFO] request - path Ok.
+[2015-10-11 16:20:32.022] [FATAL] request - Access Log OK.
+[2015-10-11 16:20:27.970] [INFO] request - favicon Ok.
+[2015-10-11 16:20:32.024] [INFO] request - Account Ok.
+[2015-10-11 16:20:27.975] [INFO] request - cookieParser Ok.
+[2015-10-11 16:20:28.013] [INFO] request - bodyParser Ok.
+[2015-10-11 16:20:28.115] [INFO] request - passport Ok.
+[2015-10-11 16:20:28.185] [INFO] request - LocalStrategy Ok.
+[2015-10-11 16:20:28.519] [INFO] request - session Ok.
+[2015-10-11 16:20:33.223] [TRACE] request - |enter FindOne 1000
+[2015-10-11 16:20:33.223] [TRACE] request - |exit FindOne 1000
+[2015-10-11 16:20:45.536] [TRACE] request - begin /patient/query/:query
+[2015-10-11 16:20:45.537] [TRACE] request - |enter Guard 
+[2015-10-11 16:20:45.537] [TRACE] request - |enter Authenticate 5000
+[2015-10-11 16:20:45.539] [TRACE] request - |exit Authenticate 5000
+[2015-10-11 16:20:45.540] [TRACE] request - |exit Guard 
+[2015-10-11 16:20:45.544] [TRACE] request - |enter Find 5000
+[2015-10-11 16:20:45.546] [TRACE] request - end /patient/query/:query
+[2015-10-11 16:20:45.546] [TRACE] request - |exit Find 5000
+[2015-10-11 16:20:49.217] [TRACE] request - begin /patient/count/:query
+[2015-10-11 16:20:49.217] [TRACE] request - |enter Guard 
+[2015-10-11 16:20:49.217] [TRACE] request - |enter Authenticate 6000
+[2015-10-11 16:20:49.218] [TRACE] request - |exit Authenticate 6000
+[2015-10-11 16:20:49.218] [TRACE] request - |exit Guard 
+[2015-10-11 16:20:49.220] [TRACE] request - end /patient/count/:query
+[2015-10-11 16:20:49.360] [TRACE] request - begin /view/:id
+[2015-10-11 16:20:49.360] [TRACE] request - |enter Guard 
+[2015-10-11 16:20:49.361] [TRACE] request - |enter Authenticate 23000
+[2015-10-11 16:20:49.361] [TRACE] request - |exit Authenticate 23000
+[2015-10-11 16:20:49.361] [TRACE] request - |exit Guard 
+[2015-10-11 16:20:49.376] [TRACE] request - |enter Find 23000
+[2015-10-11 16:20:49.388] [TRACE] request - end /view/:id
+[2015-10-11 16:20:49.389] [TRACE] request - |exit Find 23000
+[2015-10-11 16:20:58.655] [TRACE] request - begin /patient/accept
+[2015-10-11 16:20:58.655] [TRACE] request - |enter Guard 
+[2015-10-11 16:20:58.656] [TRACE] request - |exit Guard 
+[2015-10-11 16:20:58.657] [TRACE] request - |enter Find 1000
+[2015-10-11 16:20:58.661] [TRACE] request - |exit Find 1000
+[2015-10-11 16:20:58.672] [TRACE] request - |enter Save 1000
+[2015-10-11 16:20:58.673] [TRACE] request - end /patient/accept
+[2015-10-11 16:20:58.673] [TRACE] request - |exit Save 1000
+[2015-10-11 16:20:58.681] [TRACE] request - begin /patient/query/:query
+[2015-10-11 16:20:58.681] [TRACE] request - |enter Guard 
+[2015-10-11 16:20:58.681] [TRACE] request - |enter Authenticate 5000
+[2015-10-11 16:20:58.682] [TRACE] request - |exit Authenticate 5000
+[2015-10-11 16:20:58.682] [TRACE] request - |exit Guard 
+[2015-10-11 16:20:58.684] [TRACE] request - |enter Find 5000
+[2015-10-11 16:20:58.685] [TRACE] request - end /patient/query/:query
+[2015-10-11 16:20:58.687] [TRACE] request - |exit Find 5000
+[2015-10-11 20:10:38.189] [INFO] request - SIGINT.

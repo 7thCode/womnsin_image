@@ -5,18 +5,19 @@
  http://opensource.org/licenses/mit-license.php
  */
 'use strict';
+var express = require('express');
+var emitter = require('events').EventEmitter;
+var mongoose = require('mongoose');
+var Grid = require('gridfs-stream');
+var _ = require('lodash');
 var fs = require('fs');
 var text = fs.readFileSync('config/config.json', 'utf-8');
 var config = JSON.parse(text);
+config.dbaddress = process.env.DB_PORT_27017_TCP_ADDR || 'localhost';
 var log4js = require('log4js');
 log4js.configure("config/logs.json");
 var logger = log4js.getLogger('request');
 logger.setLevel(config.loglevel);
-var express = require('express');
-var emitter = require('events').EventEmitter;
-var _ = require('lodash');
-var mongoose = require('mongoose');
-var Grid = require('gridfs-stream');
 var PatientModel = require('./../model/patient');
 var AccountModel = require('./../model/account');
 var ViewModel = require('./../model/view');
@@ -67,7 +68,7 @@ try {
         }
     });
     // init schema
-    var conn = mongoose.createConnection(config.connection);
+    var conn = mongoose.createConnection("mongodb://" + config.dbaddress + "/" + config.db);
     if (conn) {
         conn.once('open', function (error) {
             if (!error) {
@@ -382,7 +383,7 @@ router.get('/pdf/:id', pdf_controller.get_pdf_id);
 router.get('/config', config_controller.get_config);
 router.put('/config', config_controller.put_config);
 //Test area
-router.get('/front/partials/browse2/:name', function (req, res, next) {
+router.get('/front/partials/browse2/:name', function (req, res) {
     var tohtml = new ToHtml();
     /*
      var data = {

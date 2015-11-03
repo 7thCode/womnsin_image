@@ -6,12 +6,13 @@
  */
 'use strict';
 var mongoose = require('mongoose');
+var _ = require('lodash');
 var fs = require('fs');
 var text = fs.readFileSync('config/config.json', 'utf-8');
 var config = JSON.parse(text);
+config.dbaddress = process.env.DB_PORT_27017_TCP_ADDR || 'localhost';
 var FileModel = require('../../model/patient');
 var Grid = require('gridfs-stream');
-var _ = require('lodash');
 var result = require('./../lib/result');
 var Wrapper = require('./../lib/wrapper');
 var wrapper = new Wrapper;
@@ -25,7 +26,7 @@ var FileController = (function () {
     FileController.prototype.get_file_name = function (request, response, next) {
         try {
             logger.trace("begin /file/:name");
-            var conn = mongoose.createConnection(config.connection);
+            var conn = mongoose.createConnection("mongodb://" + config.dbaddress + "/" + config.db);
             conn.once('open', function (error) {
                 if (!error) {
                     var gfs = Grid(conn.db, mongoose.mongo); //missing parameter
@@ -107,7 +108,7 @@ var FileController = (function () {
         wrapper.Guard(request, response, function (request, response) {
             var number = 24000;
             wrapper.Authenticate(request, response, number, function (user, response) {
-                var conn = mongoose.createConnection(config.connection);
+                var conn = mongoose.createConnection("mongodb://" + config.dbaddress + "/" + config.db);
                 if (conn) {
                     conn.once('open', function (error) {
                         if (!error) {
@@ -195,7 +196,7 @@ var FileController = (function () {
         wrapper.Guard(request, response, function (request, response) {
             var number = 25000;
             wrapper.Authenticate(request, response, number, function (user, response) {
-                var conn = mongoose.createConnection(config.connection);
+                var conn = mongoose.createConnection("mongodb://" + config.dbaddress + "/" + config.db);
                 if (conn) {
                     conn.once('open', function (error) {
                         if (!error) {
@@ -284,7 +285,7 @@ var FileController = (function () {
         wrapper.Guard(request, response, function (request, response) {
             var number = 26000;
             wrapper.Authenticate(request, response, number, function (user, response) {
-                var conn = mongoose.createConnection(config.connection);
+                var conn = mongoose.createConnection("mongodb://" + config.dbaddress + "/" + config.db);
                 if (conn) {
                     conn.once('open', function (error) {
                         if (!error) {
@@ -346,7 +347,7 @@ var FileController = (function () {
         wrapper.Guard(request, response, function (request, response) {
             var number = 27000;
             wrapper.Authenticate(request, response, number, function (user, response) {
-                var conn = mongoose.createConnection(config.connection);
+                var conn = mongoose.createConnection("mongodb://" + config.dbaddress + "/" + config.db);
                 if (conn) {
                     conn.once('open', function (error) {
                         if (!error) {

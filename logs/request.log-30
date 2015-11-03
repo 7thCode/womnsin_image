@@ -1,0 +1,71 @@
+[2015-09-30 23:32:32.542] [INFO] request - -----------------------Invoke---------------------
+[2015-09-30 23:32:33.049] [INFO] request - Index.js Start.
+[2015-09-30 23:32:32.545] [INFO] request - log4js Ok.
+[2015-09-30 23:32:33.068] [INFO] request - -----------------------Start---------------------
+[2015-09-30 23:32:32.546] [INFO] request - logger Ok.
+[2015-09-30 23:32:33.068] [INFO] request - routes Ok.
+[2015-09-30 23:32:32.546] [INFO] request - express Ok.
+[2015-09-30 23:32:33.068] [INFO] request - Jade Start.
+[2015-09-30 23:32:32.546] [INFO] request - fs Ok.
+[2015-09-30 23:32:33.111] [INFO] request - mongoose Ok.
+[2015-09-30 23:32:32.546] [INFO] request - config Ok.
+[2015-09-30 23:32:33.125] [INFO] request - MongoStore Ok.
+[2015-09-30 23:32:32.546] [INFO] request - path Ok.
+[2015-09-30 23:32:33.134] [FATAL] request - Access Log OK.
+[2015-09-30 23:32:32.552] [INFO] request - favicon Ok.
+[2015-09-30 23:32:33.136] [INFO] request - Account Ok.
+[2015-09-30 23:32:32.555] [INFO] request - cookieParser Ok.
+[2015-09-30 23:32:33.375] [TRACE] request - |enter FindOne 1000
+[2015-09-30 23:32:32.562] [INFO] request - bodyParser Ok.
+[2015-09-30 23:32:33.375] [TRACE] request - |exit FindOne 1000
+[2015-09-30 23:32:32.573] [INFO] request - passport Ok.
+[2015-09-30 23:32:32.579] [INFO] request - LocalStrategy Ok.
+[2015-09-30 23:32:32.616] [INFO] request - session Ok.
+[2015-09-30 23:33:00.479] [INFO] request - SIGINT.
+[2015-09-30 23:33:04.405] [INFO] request - -----------------------Invoke---------------------
+[2015-09-30 23:33:04.912] [INFO] request - Index.js Start.
+[2015-09-30 23:33:04.408] [INFO] request - log4js Ok.
+[2015-09-30 23:33:04.931] [INFO] request - -----------------------Start---------------------
+[2015-09-30 23:33:04.408] [INFO] request - logger Ok.
+[2015-09-30 23:33:04.932] [INFO] request - routes Ok.
+[2015-09-30 23:33:04.408] [INFO] request - express Ok.
+[2015-09-30 23:33:04.932] [INFO] request - Jade Start.
+[2015-09-30 23:33:04.409] [INFO] request - fs Ok.
+[2015-09-30 23:33:04.978] [INFO] request - mongoose Ok.
+[2015-09-30 23:33:04.409] [INFO] request - config Ok.
+[2015-09-30 23:33:04.992] [INFO] request - MongoStore Ok.
+[2015-09-30 23:33:04.409] [INFO] request - path Ok.
+[2015-09-30 23:33:05.002] [FATAL] request - Access Log OK.
+[2015-09-30 23:33:04.414] [INFO] request - favicon Ok.
+[2015-09-30 23:33:05.003] [INFO] request - Account Ok.
+[2015-09-30 23:33:04.417] [INFO] request - cookieParser Ok.
+[2015-09-30 23:33:05.248] [TRACE] request - |enter FindOne 1000
+[2015-09-30 23:33:04.423] [INFO] request - bodyParser Ok.
+[2015-09-30 23:33:05.249] [TRACE] request - |exit FindOne 1000
+[2015-09-30 23:33:04.435] [INFO] request - passport Ok.
+[2015-09-30 23:33:04.442] [INFO] request - LocalStrategy Ok.
+[2015-09-30 23:33:04.473] [INFO] request - session Ok.
+[2015-09-30 23:33:30.431] [INFO] request - SIGINT.
+[2015-09-30 23:33:39.010] [INFO] request - -----------------------Invoke---------------------
+[2015-09-30 23:33:39.526] [INFO] request - Index.js Start.
+[2015-09-30 23:33:39.013] [INFO] request - log4js Ok.
+[2015-09-30 23:33:39.546] [INFO] request - -----------------------Start---------------------
+[2015-09-30 23:33:39.013] [INFO] request - logger Ok.
+[2015-09-30 23:33:39.546] [INFO] request - routes Ok.
+[2015-09-30 23:33:39.013] [INFO] request - express Ok.
+[2015-09-30 23:33:39.547] [INFO] request - Jade Start.
+[2015-09-30 23:33:39.014] [INFO] request - fs Ok.
+[2015-09-30 23:33:39.600] [INFO] request - mongoose Ok.
+[2015-09-30 23:33:39.014] [INFO] request - config Ok.
+[2015-09-30 23:33:39.614] [INFO] request - MongoStore Ok.
+[2015-09-30 23:33:39.014] [INFO] request - path Ok.
+[2015-09-30 23:33:39.626] [FATAL] request - Access Log OK.
+[2015-09-30 23:33:39.019] [INFO] request - favicon Ok.
+[2015-09-30 23:33:39.627] [INFO] request - Account Ok.
+[2015-09-30 23:33:39.023] [INFO] request - cookieParser Ok.
+[2015-09-30 23:33:39.869] [TRACE] request - |enter FindOne 1000
+[2015-09-30 23:33:39.028] [INFO] request - bodyParser Ok.
+[2015-09-30 23:33:39.869] [TRACE] request - |exit FindOne 1000
+[2015-09-30 23:33:39.042] [INFO] request - passport Ok.
+[2015-09-30 23:33:39.048] [INFO] request - LocalStrategy Ok.
+[2015-09-30 23:33:39.085] [INFO] request - session Ok.

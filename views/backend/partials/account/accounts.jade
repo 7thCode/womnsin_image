@@ -9,7 +9,7 @@
 md-content.background
     md-progress-circular.md-accent(ng-show="progress", md-mode="indeterminate", style="position:absolute;top:50%;left:50%;")
     md-card.box-edge
-        md-card-content
+        md-card-content.layout-padding
             h1.md-headline #{content.stuff}
             md-button.md-fab.md-accent(ng-click="showRegisterDialog()", ng-if="type != 'Viewer'", aria-label="")
                 ng-md-icon(icon="person_add", aria-label="#{content.stuff}", style="position:relative;top:6px;left:1px;fill:#abcdef", size="42")
@@ -19,7 +19,7 @@ md-content.background
         md-list-item(ng-repeat="account in accounts", ng-show="account.type != 'Admin'")
             md-card(layout="row", flex)
                 md-card-content(layout="row", layout-align="center center", flex)
-                    h1.md-subhead(flex) {{account.username}}
+                    h1.md-subhead(flex, ng-bind="account.username")
 
                     div(layout="row", ng-if="type == 'Viewer'")
                         ng-md-icon(icon="person", style="{{account.type | rgb}}", size="50")
@@ -38,7 +38,7 @@ md-content.background
         md-list-item(ng-repeat="account in accounts", ng-show="account.type != 'Admin'")
             md-card(layout="row", flex)
                 md-card-content(layout="row", layout-align="center center", flex)
-                    h3.md-title(flex) {{account.username}}
+                    h3.md-title(flex, ng-bind="account.username")
 
                     div(layout="row", ng-if="type == 'Viewer'")
                         ng-md-icon(icon="person", style="{{account.type | rgb}}", size="50")

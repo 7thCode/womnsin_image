@@ -6,11 +6,12 @@
  */
 'use strict';
 var mongoose = require('mongoose');
+var _ = require('lodash');
 var fs = require('fs');
 var text = fs.readFileSync('config/config.json', 'utf-8');
 var config = JSON.parse(text);
+config.dbaddress = process.env.DB_PORT_27017_TCP_ADDR || 'localhost';
 var ViewModel = require('../../model/view');
-var _ = require('lodash');
 var result = require('./../lib/result');
 var Wrapper = require('./../lib/wrapper');
 var wrapper = new Wrapper;

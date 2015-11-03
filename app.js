@@ -12,6 +12,7 @@ var app = express();
 var fs = require('fs');
 var text = fs.readFileSync('config/config.json', 'utf-8');
 var config = JSON.parse(text);
+config.dbaddress = process.env.DB_PORT_27017_TCP_ADDR || 'localhost';
 //config.state = app.get('env');
 var log4js = require('log4js');
 log4js.configure("config/logs.json");
@@ -112,9 +113,9 @@ app.set('view engine', 'jade');
 logger.info('Jade Start.');
 // uncomment after placing your favicon in /public
 //app.use(favicon(__dirname + '/public/favicon.ico'));
-app.use(bodyParser.json());
+app.use(bodyParser({ limit: '50mb' }));
+app.use(bodyParser.json({ limit: '50mb' }));
 app.use(bodyParser.urlencoded({ limit: '50mb', extended: true }));
-//app.use(bodyParser.urlencoded({extended: false}));
 app.use(cookieParser());
 var mongoose = require('mongoose');
 if (mongoose) {
@@ -131,7 +132,7 @@ else {
     logger.fatal('MongoStore NG.');
 }
 var options = { server: { socketOptions: { connectTimeoutMS: 1000000 } } };
-mongoose.connect(config.connection, options);
+mongoose.connect("mongodb://" + config.dbaddress + "/" + config.db, options);
 process.on('exit', function (code) {
     logger.info('Stop.' + code);
 });
@@ -172,12 +173,12 @@ logger.fatal('Access Log OK.');
 app.use(express.static(path.join(__dirname, 'public')));
 app.use('/', routes);
 //passport
-//passport.serializeUser(function (user, done) {
-//    done(null, user);
-//});
-//passport.deserializeUser(function (obj, done) {
-//    done(null, obj);
-//});
+passport.serializeUser(function (user, done) {
+    done(null, user);
+});
+passport.deserializeUser(function (obj, done) {
+    done(null, obj);
+});
 var Account = require('./model/account');
 passport.use(new LocalStrategy(Account.authenticate()));
 if (Account) {
@@ -186,15 +187,15 @@ if (Account) {
 else {
     logger.fatal('Account NG.');
 }
-passport.serializeUser(Account.serializeUser());
-passport.deserializeUser(Account.deserializeUser());
+//passport.serializeUser(Account.serializeUser());
+//passport.deserializeUser(Account.deserializeUser());
 //passport
 // catch 404 and forward to error handler
 app.use(function (req, res, next) {
     var err = new Error('Not Found');
     err.status = 404;
     res.render('error', {
-        message: err.message,
+        message: err.message + " " + req.originalUrl,
         error: err
     });
 });

@@ -1,11 +1,12 @@
 {
-  "connection":"mongodb://localhost/patient",
+  "db":"patient",
+  "dbaddress": "localhost",
   "user": "root",
   "password":"root",
   "sessionkey": "Daisy, Daisy.",
   "sessionName":"wmonsin",
   "key1": "Yes We therefore I think we",
   "key2": "Man is a thinking reed",
-  "state": "production",
-  "loglevel": "ERROR"
+  "state": "development",
+  "loglevel": "TRACE"
 }

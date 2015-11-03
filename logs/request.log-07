@@ -1,0 +1,101 @@
+[2015-10-07 10:37:47.838] [INFO] request - Index.js Start.
+[2015-10-07 10:37:47.864] [INFO] request - -----------------------Start---------------------
+[2015-10-07 10:37:47.864] [INFO] request - routes Ok.
+[2015-10-07 10:37:47.865] [INFO] request - Jade Start.
+[2015-10-07 10:37:48.035] [INFO] request - mongoose Ok.
+[2015-10-07 10:37:48.138] [INFO] request - MongoStore Ok.
+[2015-10-07 10:37:48.175] [FATAL] request - Access Log OK.
+[2015-10-07 10:37:48.177] [INFO] request - Account Ok.
+[2015-10-07 10:37:49.260] [TRACE] request - |enter FindOne 1000
+[2015-10-07 10:37:49.260] [TRACE] request - |exit FindOne 1000
+[2015-10-07 10:38:10.839] [TRACE] request - begin /view/:id
+[2015-10-07 10:38:10.839] [TRACE] request - |enter Guard 
+[2015-10-07 10:38:10.840] [TRACE] request - |enter Authenticate 23000
+[2015-10-07 10:38:10.842] [TRACE] request - |exit Authenticate 23000
+[2015-10-07 10:38:10.842] [TRACE] request - |exit Guard 
+[2015-10-07 10:38:10.956] [TRACE] request - |enter Find 23000
+[2015-10-07 10:38:10.965] [TRACE] request - end /view/:id
+[2015-10-07 10:38:10.966] [TRACE] request - |exit Find 23000
+[2015-10-07 10:38:15.775] [TRACE] request - begin /view/:id
+[2015-10-07 10:38:15.775] [TRACE] request - |enter Guard 
+[2015-10-07 10:38:15.776] [TRACE] request - |exit Guard 
+[2015-10-07 10:38:15.810] [TRACE] request - |enter FindById 20000
+[2015-10-07 10:38:15.814] [TRACE] request - |exit FindById 20000
+[2015-10-07 10:38:23.459] [TRACE] request - /file/query/:query
+[2015-10-07 10:38:23.459] [TRACE] request - |enter Guard 
+[2015-10-07 10:38:23.460] [TRACE] request - |enter Authenticate 27000
+[2015-10-07 10:38:23.462] [TRACE] request - |exit Authenticate 27000
+[2015-10-07 10:38:23.462] [TRACE] request - |exit Guard 
+[2015-10-07 10:38:23.469] [TRACE] request - begin /file/:name
+[2015-10-07 10:38:23.506] [TRACE] request - end /file/query/:query
+[2015-10-07 10:38:23.531] [TRACE] request - end /file/:name
+[2015-10-07 10:38:23.548] [TRACE] request - begin /file/:name
+[2015-10-07 10:38:23.549] [TRACE] request - begin /file/:name
+[2015-10-07 10:38:23.550] [TRACE] request - begin /file/:name
+[2015-10-07 10:38:23.551] [TRACE] request - begin /file/:name
+[2015-10-07 10:38:23.551] [TRACE] request - begin /file/:name
+[2015-10-07 10:38:23.580] [TRACE] request - end /file/:name
+[2015-10-07 10:38:23.585] [TRACE] request - end /file/:name
+[2015-10-07 10:38:23.588] [TRACE] request - end /file/:name
+[2015-10-07 10:38:23.591] [TRACE] request - end /file/:name
+[2015-10-07 10:38:23.592] [TRACE] request - end /file/:name
+[2015-10-07 10:38:40.157] [TRACE] request - begin /view/:id
+[2015-10-07 10:38:40.157] [TRACE] request - |enter Guard 
+[2015-10-07 10:38:40.158] [TRACE] request - |enter Authenticate 23000
+[2015-10-07 10:38:40.158] [TRACE] request - |exit Authenticate 23000
+[2015-10-07 10:38:40.158] [TRACE] request - |exit Guard 
+[2015-10-07 10:38:40.164] [TRACE] request - |enter Find 23000
+[2015-10-07 10:38:40.177] [TRACE] request - end /view/:id
+[2015-10-07 10:38:40.177] [TRACE] request - |exit Find 23000
+[2015-10-07 10:38:44.792] [TRACE] request - begin /view/:id
+[2015-10-07 10:38:44.792] [TRACE] request - |enter Guard 
+[2015-10-07 10:38:44.792] [TRACE] request - |enter Authenticate 23000
+[2015-10-07 10:38:44.793] [TRACE] request - |exit Authenticate 23000
+[2015-10-07 10:38:44.793] [TRACE] request - |exit Guard 
+[2015-10-07 10:38:44.800] [TRACE] request - |enter Find 23000
+[2015-10-07 10:38:44.811] [TRACE] request - end /view/:id
+[2015-10-07 10:38:44.811] [TRACE] request - |exit Find 23000
+[2015-10-07 10:38:49.513] [TRACE] request - begin /view/:id
+[2015-10-07 10:38:49.513] [TRACE] request - |enter Guard 
+[2015-10-07 10:38:49.513] [TRACE] request - |exit Guard 
+[2015-10-07 10:38:49.514] [TRACE] request - |enter FindById 20000
+[2015-10-07 10:38:49.515] [TRACE] request - |exit FindById 20000
+[2015-10-07 10:39:06.970] [TRACE] request - /file/query/:query
+[2015-10-07 10:39:06.970] [TRACE] request - |enter Guard 
+[2015-10-07 10:39:06.970] [TRACE] request - |enter Authenticate 27000
+[2015-10-07 10:39:06.971] [TRACE] request - |exit Authenticate 27000
+[2015-10-07 10:39:06.971] [TRACE] request - |exit Guard 
+[2015-10-07 10:39:06.979] [TRACE] request - end /file/query/:query
+[2015-10-07 10:39:07.066] [TRACE] request - begin /file/:name
+[2015-10-07 10:39:07.067] [TRACE] request - begin /file/:name
+[2015-10-07 10:39:07.068] [TRACE] request - begin /file/:name
+[2015-10-07 10:39:07.068] [TRACE] request - begin /file/:name
+[2015-10-07 10:39:07.069] [TRACE] request - begin /file/:name
+[2015-10-07 10:39:07.078] [TRACE] request - begin /file/:name
+[2015-10-07 10:39:07.094] [TRACE] request - end /file/:name
+[2015-10-07 10:39:07.100] [TRACE] request - end /file/:name
+[2015-10-07 10:39:07.101] [TRACE] request - end /file/:name
+[2015-10-07 10:39:07.102] [TRACE] request - end /file/:name
+[2015-10-07 10:39:07.104] [TRACE] request - end /file/:name
+[2015-10-07 10:39:07.107] [TRACE] request - end /file/:name
+[2015-10-07 10:39:35.926] [TRACE] request - /file/query/:query
+[2015-10-07 10:39:35.927] [TRACE] request - |enter Guard 
+[2015-10-07 10:39:35.927] [TRACE] request - |enter Authenticate 27000
+[2015-10-07 10:39:35.928] [TRACE] request - |exit Authenticate 27000
+[2015-10-07 10:39:35.928] [TRACE] request - |exit Guard 
+[2015-10-07 10:39:35.936] [TRACE] request - end /file/query/:query
+[2015-10-07 10:39:42.948] [TRACE] request - /file/query/:query
+[2015-10-07 10:39:42.948] [TRACE] request - |enter Guard 
+[2015-10-07 10:39:42.948] [TRACE] request - |enter Authenticate 27000
+[2015-10-07 10:39:42.949] [TRACE] request - |exit Authenticate 27000
+[2015-10-07 10:39:42.949] [TRACE] request - |exit Guard 
+[2015-10-07 10:39:42.955] [TRACE] request - end /file/query/:query
+[2015-10-07 10:39:48.474] [TRACE] request - begin /file/:name
+[2015-10-07 10:39:48.481] [ERROR] request - /file/:name 3
+[2015-10-07 10:39:53.722] [TRACE] request - /file/query/:query
+[2015-10-07 10:39:53.722] [TRACE] request - |enter Guard 
+[2015-10-07 10:39:53.722] [TRACE] request - |enter Authenticate 27000
+[2015-10-07 10:39:53.723] [TRACE] request - |exit Authenticate 27000
+[2015-10-07 10:39:53.723] [TRACE] request - |exit Guard 
+[2015-10-07 10:39:53.731] [TRACE] request - end /file/query/:query
+[2015-10-07 10:41:41.986] [INFO] request - SIGINT.
