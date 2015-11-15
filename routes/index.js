@@ -5,45 +5,87 @@
  http://opensource.org/licenses/mit-license.php
  */
 'use strict';
+function alert_log(obj, name) {
+    if (obj) {
+        logger.info(name + ' Ok.');
+    }
+    else {
+        logger.fatal(name + ' NG.');
+    }
+}
 var express = require('express');
 var emitter = require('events').EventEmitter;
-var mongoose = require('mongoose');
-var Grid = require('gridfs-stream');
-var _ = require('lodash');
 var fs = require('fs');
 var text = fs.readFileSync('config/config.json', 'utf-8');
 var config = JSON.parse(text);
-config.dbaddress = process.env.DB_PORT_27017_TCP_ADDR || 'localhost';
 var log4js = require('log4js');
 log4js.configure("config/logs.json");
 var logger = log4js.getLogger('request');
 logger.setLevel(config.loglevel);
+alert_log(express, 'express');
+alert_log(emitter, 'emitter');
+var mongoose = require('mongoose');
+alert_log(mongoose, 'mongoose');
+var Grid = require('gridfs-stream');
+alert_log(Grid, 'Grid');
+var _ = require('lodash');
+alert_log(_, 'lodash');
+alert_log(fs, 'fs');
+alert_log(config, 'config');
+config.dbaddress = process.env.DB_PORT_27017_TCP_ADDR || 'localhost';
+if (config.dbaddress) {
+    logger.info('config.dbaddress : ' + config.dbaddress);
+}
+else {
+    logger.fatal('config.dbaddress NG.');
+}
 var PatientModel = require('./../model/patient');
+alert_log(PatientModel, 'PatientModel');
 var AccountModel = require('./../model/account');
+alert_log(AccountModel, 'AccountModel');
 var ViewModel = require('./../model/view');
+alert_log(ViewModel, 'ViewModel');
 var FileModel = require('./../model/file');
+alert_log(FileModel, 'FileModel');
 var ToHtml = require('./lib/tohtml');
-var csurf = require('csurf');
-var crypto = require("crypto");
+alert_log(ToHtml, 'ToHtml');
+//var csurf = require('csurf');
+//var crypto = require("crypto");
 var passport = require('passport');
+alert_log(passport, 'passport');
 var router = express.Router();
 var Settings = require('./settings');
-var formatpdf = require('./lib/formatpdf');
+alert_log(log4js, 'log4js');
+//var formatpdf = require('./lib/formatpdf');
 var result = require('./lib/result');
+alert_log(log4js, 'log4js');
 var AccountController = require('./controllers/account_controller');
+alert_log(AccountController, 'AccountController');
 var PatientController = require('./controllers/patient_controller');
+alert_log(log4js, 'log4js');
 var ViewController = require('./controllers/view_controller');
+alert_log(ViewController, 'ViewController');
 var FileController = require('./controllers/file_controller');
+alert_log(FileController, 'FileController');
 var PdfController = require('./controllers/pdf_controller');
+alert_log(PdfController, 'PdfController');
 var ConfigController = require('./controllers/config_controller');
+alert_log(ConfigController, 'ConfigController');
 var Wrapper = require('./lib/wrapper');
 var wrapper = new Wrapper;
+alert_log(wrapper, 'wrapper');
 var account_controller = new AccountController();
+alert_log(account_controller, 'account_controller');
 var partient_controller = new PatientController();
+alert_log(partient_controller, 'partient_controller');
 var view_controller = new ViewController();
+alert_log(view_controller, 'view_controller');
 var file_controller = new FileController();
+alert_log(file_controller, 'file_controller');
 var pdf_controller = new PdfController();
+alert_log(pdf_controller, 'pdf_controller');
 var config_controller = new ConfigController();
+alert_log(config_controller, 'config_controller');
 logger.info('Index.js Start.');
 //var emitter = require('socket.io-emitter')({ host: '127.0.0.1', port: 6379 });
 //non csrf
@@ -52,6 +94,7 @@ logger.info('Index.js Start.');
 //});
 //csrf
 module.exports = router;
+// init db data
 try {
     // root user
     wrapper.FindOne(null, 1000, AccountModel, { username: "root" }, function (res, account) {
@@ -873,8 +916,53 @@ router.get('/json', function (req, res, next) {
         ]
     };
     //var a = tohtml.render(data);
-    var head = '<!DOCTYPE html>' + '<html lang="ja">' + '<head>' + '<meta charset="utf-8">' + '<meta name="format-detection" content="telephone=no">' + '<meta name="msapplication-tap-highlight" content="no">' + '<meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height">' + '<title>wmonsin</title>' + '<link rel="apple-touch-icon" sizes="57x57" href="/favicons/apple-touch-icon-57x57.png">' + '<link rel="apple-touch-icon" sizes="60x60" href="/favicons/apple-touch-icon-60x60.png">' + '<link rel="apple-touch-icon" sizes="72x72" href="/favicons/apple-touch-icon-72x72.png">' + '<link rel="apple-touch-icon" sizes="76x76" href="/favicons/apple-touch-icon-76x76.png">' + '<link rel="apple-touch-icon" sizes="114x114" href="/favicons/apple-touch-icon-114x114.png">' + '<link rel="apple-touch-icon" sizes="120x120" href="/favicons/apple-touch-icon-120x120.png">' + '<link rel="apple-touch-icon" sizes="144x144" href="/favicons/apple-touch-icon-144x144.png">' + '<link rel="apple-touch-icon" sizes="152x152" href="/favicons/apple-touch-icon-152x152.png">' + '<link rel="apple-touch-icon" sizes="180x180" href="/favicons/apple-touch-icon-180x180.png">' + '<link rel="icon" type="image/png" href="/favicons/favicon-32x32.png" sizes="32x32">' + '<link rel="icon" type="image/png" href="/favicons/android-chrome-192x192.png" sizes="192x192">' + '<link rel="icon" type="image/png" href="/favicons/favicon-96x96.png" sizes="96x96">' + '<link rel="icon" type="image/png" href="/favicons/favicon-16x16.png" sizes="16x16">' + '<link rel="manifest" href="/favicons/manifest.json">' + '<meta name="msapplication-TileColor" content="#da532c">' + '<meta name="msapplication-TileImage" content="/favicons/mstile-144x144.png">' + '<meta name="theme-color" content="#ffffff">' + '<link rel="stylesheet" type="text/css" href="/bower_components/angular-material/angular-material.min.css">' + '<link rel="stylesheet" type="text/css" href="/stylesheets/style.css">' + '</head>' + '<body layout="column" ng-app="PatientsApplication" style="background-color: #A0A0FF;">';
-    var tail = '</body>' + '</html>' + '<script type="text/javascript" src="/bower_components/jquery/dist/jquery.min.js"></script>' + '<script type="text/javascript" src="/socket.io/socket.io.js"></script>' + '<script type="text/javascript" src="/bower_components/hammerjs/hammer.min.js"></script>' + '<script type="text/javascript" src="/bower_components/angular/angular.min.js"></script>' + '<script type="text/javascript" src="/bower_components/angular-ui-router/release/angular-ui-router.min.js"></script>' + '<script type="text/javascript" src="/bower_components/angular-animate/angular-animate.min.js"></script>' + '<script type="text/javascript" src="/bower_components/angular-aria/angular-aria.min.js"></script>' + '<script type="text/javascript" src="/bower_components/angular-material/angular-material.min.js"></script>' + '<script type="text/javascript" src="/bower_components/angular-messages/angular-messages.min.js"></script>' + '<script type="text/javascript" src="/bower_components/angular-resource/angular-resource.min.js"></script>' + '<script type="text/javascript" src="/bower_components/angular-material-icons/angular-material-icons.min.js"></script>' + '<script type="text/javascript" src="/bower_components/lodash/lodash.min.js"></script>' + '<script type="text/javascript" src="/bower_components/fabric/dist/fabric.min.js"></script>' + '<script type="text/javascript" src="/front/javascripts/PatientsApplication.min.js"></script>' + '<script type="text/javascript" src="/front/javascripts/PatientsControllers.min.js"></script>' + '<script type="text/javascript" src="/javascripts/TopControllers.min.js"></script>';
+    var head = '<!DOCTYPE html>' +
+        '<html lang="ja">' +
+        '<head>' +
+        '<meta charset="utf-8">' +
+        '<meta name="format-detection" content="telephone=no">' +
+        '<meta name="msapplication-tap-highlight" content="no">' +
+        '<meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height">' +
+        '<title>wmonsin</title>' +
+        '<link rel="apple-touch-icon" sizes="57x57" href="/favicons/apple-touch-icon-57x57.png">' +
+        '<link rel="apple-touch-icon" sizes="60x60" href="/favicons/apple-touch-icon-60x60.png">' +
+        '<link rel="apple-touch-icon" sizes="72x72" href="/favicons/apple-touch-icon-72x72.png">' +
+        '<link rel="apple-touch-icon" sizes="76x76" href="/favicons/apple-touch-icon-76x76.png">' +
+        '<link rel="apple-touch-icon" sizes="114x114" href="/favicons/apple-touch-icon-114x114.png">' +
+        '<link rel="apple-touch-icon" sizes="120x120" href="/favicons/apple-touch-icon-120x120.png">' +
+        '<link rel="apple-touch-icon" sizes="144x144" href="/favicons/apple-touch-icon-144x144.png">' +
+        '<link rel="apple-touch-icon" sizes="152x152" href="/favicons/apple-touch-icon-152x152.png">' +
+        '<link rel="apple-touch-icon" sizes="180x180" href="/favicons/apple-touch-icon-180x180.png">' +
+        '<link rel="icon" type="image/png" href="/favicons/favicon-32x32.png" sizes="32x32">' +
+        '<link rel="icon" type="image/png" href="/favicons/android-chrome-192x192.png" sizes="192x192">' +
+        '<link rel="icon" type="image/png" href="/favicons/favicon-96x96.png" sizes="96x96">' +
+        '<link rel="icon" type="image/png" href="/favicons/favicon-16x16.png" sizes="16x16">' +
+        '<link rel="manifest" href="/favicons/manifest.json">' +
+        '<meta name="msapplication-TileColor" content="#da532c">' +
+        '<meta name="msapplication-TileImage" content="/favicons/mstile-144x144.png">' +
+        '<meta name="theme-color" content="#ffffff">' +
+        '<link rel="stylesheet" type="text/css" href="/bower_components/angular-material/angular-material.min.css">' +
+        '<link rel="stylesheet" type="text/css" href="/stylesheets/style.css">' +
+        '</head>' +
+        '<body layout="column" ng-app="PatientsApplication" style="background-color: #A0A0FF;">';
+    var tail = '</body>' +
+        '</html>' +
+        '<script type="text/javascript" src="/bower_components/jquery/dist/jquery.min.js"></script>' +
+        '<script type="text/javascript" src="/socket.io/socket.io.js"></script>' +
+        '<script type="text/javascript" src="/bower_components/hammerjs/hammer.min.js"></script>' +
+        '<script type="text/javascript" src="/bower_components/angular/angular.min.js"></script>' +
+        '<script type="text/javascript" src="/bower_components/angular-ui-router/release/angular-ui-router.min.js"></script>' +
+        '<script type="text/javascript" src="/bower_components/angular-animate/angular-animate.min.js"></script>' +
+        '<script type="text/javascript" src="/bower_components/angular-aria/angular-aria.min.js"></script>' +
+        '<script type="text/javascript" src="/bower_components/angular-material/angular-material.min.js"></script>' +
+        '<script type="text/javascript" src="/bower_components/angular-messages/angular-messages.min.js"></script>' +
+        '<script type="text/javascript" src="/bower_components/angular-resource/angular-resource.min.js"></script>' +
+        '<script type="text/javascript" src="/bower_components/angular-material-icons/angular-material-icons.min.js"></script>' +
+        '<script type="text/javascript" src="/bower_components/lodash/lodash.min.js"></script>' +
+        '<script type="text/javascript" src="/bower_components/fabric/dist/fabric.min.js"></script>' +
+        '<script type="text/javascript" src="/front/javascripts/PatientsApplication.min.js"></script>' +
+        '<script type="text/javascript" src="/front/javascripts/PatientsControllers.min.js"></script>' +
+        '<script type="text/javascript" src="/javascripts/TopControllers.min.js"></script>';
     res.send(head + tohtml.render(data.content) + tail);
 });
 logger.info('-----------------------Start---------------------');

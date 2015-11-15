@@ -1,13 +1,220 @@
-[2015-10-30 21:04:21.758] [INFO] request - -----------------------Invoke---------------------
-[2015-10-30 21:04:21.762] [INFO] request - log4js Ok.
-[2015-10-30 21:04:21.763] [INFO] request - logger Ok.
-[2015-10-30 21:04:21.763] [INFO] request - express Ok.
-[2015-10-30 21:04:21.763] [INFO] request - fs Ok.
-[2015-10-30 21:04:21.763] [INFO] request - config Ok.
-[2015-10-30 21:04:21.763] [INFO] request - path Ok.
-[2015-10-30 21:04:21.852] [INFO] request - favicon Ok.
-[2015-10-30 21:04:21.864] [INFO] request - cookieParser Ok.
-[2015-10-30 21:04:21.929] [INFO] request - bodyParser Ok.
-[2015-10-30 21:04:21.999] [INFO] request - passport Ok.
-[2015-10-30 21:04:22.042] [INFO] request - LocalStrategy Ok.
-[2015-10-30 21:04:22.561] [INFO] request - session Ok.
+[2015-11-15 16:48:08.768] [INFO] request - config.dbaddress : localhost
+[2015-11-15 16:48:08.837] [INFO] request - express Ok.
+[2015-11-15 16:48:09.138] [INFO] request - AccountController Ok.
+[2015-11-15 16:48:09.140] [INFO] request - log4js Ok.
+[2015-11-15 16:48:09.141] [INFO] request - ViewController Ok.
+[2015-11-15 16:48:09.143] [INFO] request - FileController Ok.
+[2015-11-15 16:48:09.182] [INFO] request - PdfController Ok.
+[2015-11-15 16:48:09.183] [INFO] request - ConfigController Ok.
+[2015-11-15 16:48:08.773] [INFO] request - -----------------------Invoke---------------------
+[2015-11-15 16:48:08.837] [INFO] request - emitter Ok.
+[2015-11-15 16:48:09.183] [INFO] request - wrapper Ok.
+[2015-11-15 16:48:08.773] [INFO] request - log4js Ok.
+[2015-11-15 16:48:09.076] [INFO] request - mongoose Ok.
+[2015-11-15 16:48:09.183] [INFO] request - account_controller Ok.
+[2015-11-15 16:48:08.774] [INFO] request - express Ok.
+[2015-11-15 16:48:09.080] [INFO] request - Grid Ok.
+[2015-11-15 16:48:09.183] [INFO] request - partient_controller Ok.
+[2015-11-15 16:48:08.774] [INFO] request - fs Ok.
+[2015-11-15 16:48:09.107] [INFO] request - lodash Ok.
+[2015-11-15 16:48:09.183] [INFO] request - view_controller Ok.
+[2015-11-15 16:48:08.774] [INFO] request - config Ok.
+[2015-11-15 16:48:09.107] [INFO] request - fs Ok.
+[2015-11-15 16:48:09.184] [INFO] request - file_controller Ok.
+[2015-11-15 16:48:08.774] [INFO] request - path Ok.
+[2015-11-15 16:48:09.107] [INFO] request - config Ok.
+[2015-11-15 16:48:09.184] [INFO] request - pdf_controller Ok.
+[2015-11-15 16:48:08.779] [INFO] request - favicon Ok.
+[2015-11-15 16:48:09.107] [INFO] request - config.dbaddress : localhost
+[2015-11-15 16:48:09.184] [INFO] request - config_controller Ok.
+[2015-11-15 16:48:08.781] [INFO] request - cookie-parser Ok.
+[2015-11-15 16:48:09.116] [INFO] request - PatientModel Ok.
+[2015-11-15 16:48:09.184] [INFO] request - Index.js Start.
+[2015-11-15 16:48:08.788] [INFO] request - body-parser Ok.
+[2015-11-15 16:48:09.123] [INFO] request - AccountModel Ok.
+[2015-11-15 16:48:09.201] [INFO] request - -----------------------Start---------------------
+[2015-11-15 16:48:08.800] [INFO] request - passport Ok.
+[2015-11-15 16:48:09.125] [INFO] request - ViewModel Ok.
+[2015-11-15 16:48:09.201] [INFO] request - routes Ok.
+[2015-11-15 16:48:08.803] [INFO] request - LocalStrategy Ok.
+[2015-11-15 16:48:09.128] [INFO] request - FileModel Ok.
+[2015-11-15 16:48:09.202] [INFO] request - Jade Start.
+[2015-11-15 16:48:08.833] [INFO] request - session Ok.
+[2015-11-15 16:48:09.129] [INFO] request - ToHtml Ok.
+[2015-11-15 16:48:09.239] [INFO] request - mongoose Ok.
+[2015-11-15 16:48:09.129] [INFO] request - passport Ok.
+[2015-11-15 16:48:09.250] [INFO] request - MongoStore Ok.
+[2015-11-15 16:48:09.131] [INFO] request - log4js Ok.
+[2015-11-15 16:48:09.262] [INFO] request - Access Log OK.
+[2015-11-15 16:48:09.132] [INFO] request - log4js Ok.
+[2015-11-15 16:48:09.263] [INFO] request - Account Ok.
+[2015-11-15 16:48:09.450] [TRACE] request - |enter FindOne 1000
+[2015-11-15 16:48:09.450] [TRACE] request - |exit FindOne 1000
+[2015-11-15 16:56:58.948] [INFO] request - config.dbaddress : localhost
+[2015-11-15 16:56:59.017] [INFO] request - express Ok.
+[2015-11-15 16:56:59.325] [INFO] request - AccountController Ok.
+[2015-11-15 16:56:59.327] [INFO] request - log4js Ok.
+[2015-11-15 16:56:59.328] [INFO] request - ViewController Ok.
+[2015-11-15 16:56:59.331] [INFO] request - FileController Ok.
+[2015-11-15 16:56:59.366] [INFO] request - PdfController Ok.
+[2015-11-15 16:56:59.367] [INFO] request - ConfigController Ok.
+[2015-11-15 16:56:58.953] [INFO] request - -----------------------Invoke---------------------
+[2015-11-15 16:56:59.017] [INFO] request - emitter Ok.
+[2015-11-15 16:56:59.367] [INFO] request - wrapper Ok.
+[2015-11-15 16:56:58.953] [INFO] request - log4js Ok.
+[2015-11-15 16:56:59.256] [INFO] request - mongoose Ok.
+[2015-11-15 16:56:59.367] [INFO] request - account_controller Ok.
+[2015-11-15 16:56:58.954] [INFO] request - express Ok.
+[2015-11-15 16:56:59.261] [INFO] request - Grid Ok.
+[2015-11-15 16:56:59.367] [INFO] request - partient_controller Ok.
+[2015-11-15 16:56:58.954] [INFO] request - fs Ok.
+[2015-11-15 16:56:59.288] [INFO] request - lodash Ok.
+[2015-11-15 16:56:59.367] [INFO] request - view_controller Ok.
+[2015-11-15 16:56:58.954] [INFO] request - config Ok.
+[2015-11-15 16:56:59.288] [INFO] request - fs Ok.
+[2015-11-15 16:56:59.367] [INFO] request - file_controller Ok.
+[2015-11-15 16:56:58.954] [INFO] request - path Ok.
+[2015-11-15 16:56:59.288] [INFO] request - config Ok.
+[2015-11-15 16:56:59.368] [INFO] request - pdf_controller Ok.
+[2015-11-15 16:56:58.959] [INFO] request - favicon Ok.
+[2015-11-15 16:56:59.288] [INFO] request - config.dbaddress : localhost
+[2015-11-15 16:56:59.368] [INFO] request - config_controller Ok.
+[2015-11-15 16:56:58.961] [INFO] request - cookie-parser Ok.
+[2015-11-15 16:56:59.297] [INFO] request - PatientModel Ok.
+[2015-11-15 16:56:59.368] [INFO] request - Index.js Start.
+[2015-11-15 16:56:58.968] [INFO] request - body-parser Ok.
+[2015-11-15 16:56:59.304] [INFO] request - AccountModel Ok.
+[2015-11-15 16:56:59.382] [INFO] request - -----------------------Start---------------------
+[2015-11-15 16:56:58.980] [INFO] request - passport Ok.
+[2015-11-15 16:56:59.305] [INFO] request - ViewModel Ok.
+[2015-11-15 16:56:59.382] [INFO] request - routes Ok.
+[2015-11-15 16:56:58.984] [INFO] request - LocalStrategy Ok.
+[2015-11-15 16:56:59.308] [INFO] request - FileModel Ok.
+[2015-11-15 16:56:59.382] [INFO] request - Jade Start.
+[2015-11-15 16:56:59.013] [INFO] request - session Ok.
+[2015-11-15 16:56:59.310] [INFO] request - ToHtml Ok.
+[2015-11-15 16:56:59.413] [INFO] request - mongoose Ok.
+[2015-11-15 16:56:59.311] [INFO] request - passport Ok.
+[2015-11-15 16:56:59.424] [INFO] request - MongoStore Ok.
+[2015-11-15 16:56:59.315] [INFO] request - log4js Ok.
+[2015-11-15 16:56:59.439] [INFO] request - Access Log OK.
+[2015-11-15 16:56:59.316] [INFO] request - log4js Ok.
+[2015-11-15 16:56:59.441] [INFO] request - Account Ok.
+[2015-11-15 16:56:59.656] [TRACE] request - |enter FindOne 1000
+[2015-11-15 16:56:59.656] [TRACE] request - |exit FindOne 1000
+[2015-11-15 16:58:48.626] [INFO] request - SIGINT.
+[2015-11-15 16:58:52.223] [INFO] request - SIGINT.
+[2015-11-15 16:58:52.437] [INFO] request - SIGINT.
+[2015-11-15 16:58:52.613] [INFO] request - SIGINT.
+[2015-11-15 16:58:52.797] [INFO] request - SIGINT.
+[2015-11-15 16:58:52.957] [INFO] request - SIGINT.
+[2015-11-15 16:58:55.382] [INFO] request - SIGINT.
+[2015-11-15 17:00:48.008] [INFO] request - config.dbaddress : localhost
+[2015-11-15 17:00:48.073] [INFO] request - express Ok.
+[2015-11-15 17:00:48.384] [INFO] request - AccountController Ok.
+[2015-11-15 17:00:48.385] [INFO] request - log4js Ok.
+[2015-11-15 17:00:48.387] [INFO] request - ViewController Ok.
+[2015-11-15 17:00:48.389] [INFO] request - FileController Ok.
+[2015-11-15 17:00:48.433] [INFO] request - PdfController Ok.
+[2015-11-15 17:00:48.434] [INFO] request - ConfigController Ok.
+[2015-11-15 17:00:48.011] [INFO] request - -----------------------Invoke---------------------
+[2015-11-15 17:00:48.074] [INFO] request - emitter Ok.
+[2015-11-15 17:00:48.434] [INFO] request - wrapper Ok.
+[2015-11-15 17:00:48.011] [INFO] request - log4js Ok.
+[2015-11-15 17:00:48.322] [INFO] request - mongoose Ok.
+[2015-11-15 17:00:48.435] [INFO] request - account_controller Ok.
+[2015-11-15 17:00:48.012] [INFO] request - express Ok.
+[2015-11-15 17:00:48.326] [INFO] request - Grid Ok.
+[2015-11-15 17:00:48.435] [INFO] request - partient_controller Ok.
+[2015-11-15 17:00:48.012] [INFO] request - fs Ok.
+[2015-11-15 17:00:48.353] [INFO] request - lodash Ok.
+[2015-11-15 17:00:48.435] [INFO] request - view_controller Ok.
+[2015-11-15 17:00:48.012] [INFO] request - config Ok.
+[2015-11-15 17:00:48.353] [INFO] request - fs Ok.
+[2015-11-15 17:00:48.435] [INFO] request - file_controller Ok.
+[2015-11-15 17:00:48.012] [INFO] request - path Ok.
+[2015-11-15 17:00:48.353] [INFO] request - config Ok.
+[2015-11-15 17:00:48.435] [INFO] request - pdf_controller Ok.
+[2015-11-15 17:00:48.015] [INFO] request - favicon Ok.
+[2015-11-15 17:00:48.353] [INFO] request - config.dbaddress : localhost
+[2015-11-15 17:00:48.435] [INFO] request - config_controller Ok.
+[2015-11-15 17:00:48.018] [INFO] request - cookie-parser Ok.
+[2015-11-15 17:00:48.362] [INFO] request - PatientModel Ok.
+[2015-11-15 17:00:48.435] [INFO] request - Index.js Start.
+[2015-11-15 17:00:48.025] [INFO] request - body-parser Ok.
+[2015-11-15 17:00:48.369] [INFO] request - AccountModel Ok.
+[2015-11-15 17:00:48.453] [INFO] request - -----------------------Start---------------------
+[2015-11-15 17:00:48.037] [INFO] request - passport Ok.
+[2015-11-15 17:00:48.370] [INFO] request - ViewModel Ok.
+[2015-11-15 17:00:48.453] [INFO] request - routes Ok.
+[2015-11-15 17:00:48.040] [INFO] request - LocalStrategy Ok.
+[2015-11-15 17:00:48.373] [INFO] request - FileModel Ok.
+[2015-11-15 17:00:48.453] [INFO] request - Jade Start.
+[2015-11-15 17:00:48.069] [INFO] request - session Ok.
+[2015-11-15 17:00:48.375] [INFO] request - ToHtml Ok.
+[2015-11-15 17:00:48.493] [INFO] request - mongoose Ok.
+[2015-11-15 17:00:48.375] [INFO] request - passport Ok.
+[2015-11-15 17:00:48.504] [INFO] request - MongoStore Ok.
+[2015-11-15 17:00:48.377] [INFO] request - log4js Ok.
+[2015-11-15 17:00:48.516] [INFO] request - Access Log OK.
+[2015-11-15 17:00:48.377] [INFO] request - log4js Ok.
+[2015-11-15 17:00:48.518] [INFO] request - Account Ok.
+[2015-11-15 17:00:48.714] [TRACE] request - |enter FindOne 1000
+[2015-11-15 17:00:48.715] [TRACE] request - |exit FindOne 1000
+[2015-11-15 17:01:11.124] [INFO] request - SIGINT.
+[2015-11-15 17:08:56.658] [INFO] request - config.dbaddress : localhost
+[2015-11-15 17:08:56.726] [INFO] request - express Ok.
+[2015-11-15 17:08:57.052] [INFO] request - AccountController Ok.
+[2015-11-15 17:08:57.054] [INFO] request - log4js Ok.
+[2015-11-15 17:08:57.055] [INFO] request - ViewController Ok.
+[2015-11-15 17:08:57.058] [INFO] request - FileController Ok.
+[2015-11-15 17:08:57.109] [INFO] request - PdfController Ok.
+[2015-11-15 17:08:57.111] [INFO] request - ConfigController Ok.
+[2015-11-15 17:08:56.662] [INFO] request - -----------------------Invoke---------------------
+[2015-11-15 17:08:56.726] [INFO] request - emitter Ok.
+[2015-11-15 17:08:57.111] [INFO] request - wrapper Ok.
+[2015-11-15 17:08:56.663] [INFO] request - log4js Ok.
+[2015-11-15 17:08:56.975] [INFO] request - mongoose Ok.
+[2015-11-15 17:08:57.111] [INFO] request - account_controller Ok.
+[2015-11-15 17:08:56.663] [INFO] request - express Ok.
+[2015-11-15 17:08:56.979] [INFO] request - Grid Ok.
+[2015-11-15 17:08:57.112] [INFO] request - partient_controller Ok.
+[2015-11-15 17:08:56.663] [INFO] request - fs Ok.
+[2015-11-15 17:08:57.013] [INFO] request - lodash Ok.
+[2015-11-15 17:08:57.112] [INFO] request - view_controller Ok.
+[2015-11-15 17:08:56.663] [INFO] request - config Ok.
+[2015-11-15 17:08:57.013] [INFO] request - fs Ok.
+[2015-11-15 17:08:57.112] [INFO] request - file_controller Ok.
+[2015-11-15 17:08:56.664] [INFO] request - path Ok.
+[2015-11-15 17:08:57.013] [INFO] request - config Ok.
+[2015-11-15 17:08:57.112] [INFO] request - pdf_controller Ok.
+[2015-11-15 17:08:56.667] [INFO] request - favicon Ok.
+[2015-11-15 17:08:57.013] [INFO] request - config.dbaddress : localhost
+[2015-11-15 17:08:57.112] [INFO] request - config_controller Ok.
+[2015-11-15 17:08:56.670] [INFO] request - cookie-parser Ok.
+[2015-11-15 17:08:57.023] [INFO] request - PatientModel Ok.
+[2015-11-15 17:08:57.112] [INFO] request - Index.js Start.
+[2015-11-15 17:08:56.675] [INFO] request - body-parser Ok.
+[2015-11-15 17:08:57.030] [INFO] request - AccountModel Ok.
+[2015-11-15 17:08:57.129] [INFO] request - -----------------------Start---------------------
+[2015-11-15 17:08:56.689] [INFO] request - passport Ok.
+[2015-11-15 17:08:57.031] [INFO] request - ViewModel Ok.
+[2015-11-15 17:08:57.129] [INFO] request - routes Ok.
+[2015-11-15 17:08:56.692] [INFO] request - LocalStrategy Ok.
+[2015-11-15 17:08:57.037] [INFO] request - FileModel Ok.
+[2015-11-15 17:08:57.129] [INFO] request - Jade Start.
+[2015-11-15 17:08:56.721] [INFO] request - session Ok.
+[2015-11-15 17:08:57.040] [INFO] request - ToHtml Ok.
+[2015-11-15 17:08:57.178] [INFO] request - mongoose Ok.
+[2015-11-15 17:08:57.041] [INFO] request - passport Ok.
+[2015-11-15 17:08:57.189] [INFO] request - MongoStore Ok.
+[2015-11-15 17:08:57.044] [INFO] request - log4js Ok.
+[2015-11-15 17:08:57.201] [INFO] request - Access Log OK.
+[2015-11-15 17:08:57.045] [INFO] request - log4js Ok.
+[2015-11-15 17:08:57.202] [INFO] request - Account Ok.
+[2015-11-15 17:08:57.447] [TRACE] request - |enter FindOne 1000
+[2015-11-15 17:08:57.447] [TRACE] request - |exit FindOne 1000
+[2015-11-15 17:09:17.329] [INFO] request - SIGINT.
+[2015-11-15 17:09:19.176] [INFO] request - SIGINT.
+[2015-11-15 17:09:19.335] [INFO] request - SIGINT.
+[2015-11-15 17:09:19.519] [INFO] request - SIGINT.
