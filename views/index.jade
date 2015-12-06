@@ -1,0 +1,22 @@
+extends layout.jade
+
+block content
+    body.background(ng-app="TopApplication")
+        md-toolbar(md-scroll-shrink)
+            .md-toolbar-tools(layout="row", layout-align="end center")
+                h3(flex)
+                    span wmonsin
+                div(layout="row")
+                    md-button.md-raised.md-accent(ng-href='/front/#/browseS', aria-label="") 問診票
+                    md-button.md-raised.md-accent(ng-href='/backend/#/start', aria-label="") 管理
+
+        div(ui-view="")
+
+block include
+
+    if development
+        script(type="text/javascript", src="javascripts/TopApplication.js")
+        script(type="text/javascript", src="javascripts/TopControllers.js")
+    else
+        script(type="text/javascript", src="javascripts/TopApplication.min.js")
+        script(type="text/javascript", src="javascripts/TopControllers.min.js")
