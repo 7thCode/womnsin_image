@@ -36,6 +36,9 @@ controllers.value("CurrentAccount", {
     'username': "",
     'type': ""
 });
+controllers.value("CurrentQuery", {
+    'query': {}
+});
 controllers.factory('ViewItem', ['$resource',
     function ($resource) {
         return $resource('/view', {}, {});
@@ -158,8 +161,14 @@ function TodayQuery() {
     yesterday.setHours(0, 0, 0, 1);
     return { $and: [{ Date: { $lte: today } }, { Date: { $gt: yesterday } }] };
 }
+function Query(query) {
+    var result = TodayQuery();
+    if (query != {}) {
+        result = query;
+    }
+    return result;
+}
 function PatientsList(resource, query, success) {
-    var query = TodayQuery();
     resource.query({ query: encodeURIComponent(JSON.stringify(query)) }, function (data, headers) {
         if (data) {
             if (data.code === 0) {
@@ -274,13 +283,15 @@ controllers.controller("ApplicationController", ["$scope", "$rootScope", '$state
         $scope.type = CurrentAccount.type;
         $scope.mode = "Account";
     }]);
-controllers.controller('PatientsController', ['$scope', '$state', '$stateParams', '$q', "$mdDialog", '$mdBottomSheet', '$mdToast', 'Patient', 'PatientAccept', 'PatientQuery', 'PatientCount', 'CurrentAccount', 'CurrentPatient', 'Global',
-    function ($scope, $state, $stateParams, $q, $mdDialog, $mdBottomSheet, $mdToast, Patient, PatientAccept, PatientQuery, PatientCount, CurrentAccount, CurrentPatient, Global) {
+controllers.controller('PatientsController', ['$scope', '$state', '$stateParams', '$q', "$mdDialog", '$mdBottomSheet', '$mdToast', 'Patient', 'PatientAccept', 'PatientQuery', 'CurrentQuery', 'PatientCount', 'CurrentAccount', 'CurrentPatient', 'Global',
+    function ($scope, $state, $stateParams, $q, $mdDialog, $mdBottomSheet, $mdToast, Patient, PatientAccept, PatientQuery, CurrentQuery, PatientCount, CurrentAccount, CurrentPatient, Global) {
         if (CurrentAccount.username !== "") {
             $scope.username = CurrentAccount.username;
             $scope.type = CurrentAccount.type;
+            CurrentQuery.query = Query({});
             $scope.progress = true;
-            PatientsList(PatientQuery, {}, function (data) {
+            //var query:any = Query({});
+            PatientsList(PatientQuery, CurrentQuery.query, function (data) {
                 $scope.patients = data;
                 $scope.progress = false;
             });
@@ -303,8 +314,8 @@ controllers.controller('PatientsController', ['$scope', '$state', '$stateParams'
                 });
             };
             $scope.showPatientAcceptDialog = function (id) {
-                var query = TodayQuery();
-                PatientCount.query({ query: encodeURIComponent(JSON.stringify(query)) }, function (data) {
+                //   var query:any = Query({});
+                PatientCount.query({ query: encodeURIComponent(JSON.stringify(CurrentQuery.query)) }, function (data) {
                     if (data) {
                         if (data.code === 0) {
                             var items = { count: 0 };
@@ -337,7 +348,8 @@ controllers.controller('PatientsController', ['$scope', '$state', '$stateParams'
                                 patient.$save({}, function (result) {
                                     if (result) {
                                         if (result.code === 0) {
-                                            PatientsList(PatientQuery, {}, function (data) {
+                                            // var query:any = Query({});
+                                            PatientsList(PatientQuery, CurrentQuery.query, function (data) {
                                                 $scope.progress = false;
                                                 Global.socket.emit('server', { value: "1" });
                                                 $scope.patients = data;
@@ -357,21 +369,45 @@ controllers.controller('PatientsController', ['$scope', '$state', '$stateParams'
                     }
                 });
             };
-            $scope.querySearch = function (querystring) {
+            $scope.querySearch = function (query) {
                 var deferred = $q.defer();
-                var query = TodayQuery();
-                PatientQuery.query({ query: encodeURIComponent(JSON.stringify({ $and: [query, { "Information.name": { $regex: querystring } }] })) }, function (data) {
+                PatientQuery.query({ query: encodeURIComponent(CurrentQuery.query) }, function (data) {
+                    //     PatientQuery.query({query: encodeURIComponent(JSON.stringify({$and: [query, {"Information.name": {$regex: querystring}}]}))}, (data:any):void => {
                     deferred.resolve(data.value);
                 });
                 return deferred.promise;
             };
             $scope.searchTextChange = function (text) {
+                var query = CurrentQuery.query;
+                if (text != "") {
+                    query = { "Information.name": { $regex: text } };
+                    CurrentQuery.query = query;
+                }
+                else {
+                    CurrentQuery.query = Query({});
+                }
+                PatientsList(PatientQuery, CurrentQuery.query, function (data) {
+                    $scope.patients = data;
+                    $scope.progress = false;
+                });
             };
             $scope.selectedItemChange = function (item) {
+                var query = CurrentQuery.query;
+                if (item != "") {
+                    query = { "Information.name": { $regex: item } };
+                    CurrentQuery.query = query;
+                }
+                else {
+                    CurrentQuery.query = Query({});
+                }
+                PatientsList(PatientQuery, CurrentQuery.query, function (data) {
+                    $scope.patients = data;
+                    $scope.progress = false;
+                });
             };
             $scope.$on('Login', function () {
                 $scope.progress = true;
-                PatientsList(PatientQuery, {}, function (data) {
+                PatientsList(PatientQuery, CurrentQuery.query, function (data) {
                     $scope.patients = data;
                     $scope.progress = false;
                 });
@@ -383,7 +419,7 @@ controllers.controller('PatientsController', ['$scope', '$state', '$stateParams'
             });
             $scope.$on('Update', function () {
                 $scope.progress = true;
-                PatientsList(PatientQuery, {}, function (data) {
+                PatientsList(PatientQuery, CurrentQuery.query, function (data) {
                     $scope.patients = data;
                     $scope.progress = false;
                 });
@@ -391,7 +427,7 @@ controllers.controller('PatientsController', ['$scope', '$state', '$stateParams'
             Global.socket.on('client', function (data) {
                 if (data.value === "1") {
                     $scope.progress = true;
-                    PatientsList(PatientQuery, {}, function (data) {
+                    PatientsList(PatientQuery, CurrentQuery.query, function (data) {
                         $scope.patients = data;
                         $scope.progress = false;
                     });
@@ -478,7 +514,7 @@ controllers.controller('DescriptionController', ['$scope', '$mdBottomSheet', '$m
                 patientinformation.insurance = $scope.Information.insurance;
                 patientinformation.patientid = $scope.Information.patientid;
                 patientinformation.$update({ id: CurrentPatient.id }, function (result) {
-                    var a = 1;
+                    $mdToast.show($mdToast.simple().content("OK."));
                 });
             };
             $scope.done = function () {
