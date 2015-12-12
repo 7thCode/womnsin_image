@@ -10,9 +10,7 @@ var Configure = (function () {
         this.initView = {
             Views: [
                 {
-                    Name: "内科",
-                    ReadOnly: true,
-                    Pages: [
+                    Name: "内科", ReadOnly: true, Pages: [
                         {
                             headline: "どのような症状ですか？",
                             items: [
@@ -379,21 +377,14 @@ var Configure = (function () {
                     ]
                 },
                 {
-                    Name: "外科",
-                    ReadOnly: true,
-                    Pages: [
+                    Name: "外科", ReadOnly: true, Pages: [
                         {
                             headline: "お名前？",
                             items: [
                                 {
-                                    label: "お名前",
-                                    name: "お名前",
-                                    model: "",
-                                    type: "text",
-                                    items: [
+                                    label: "お名前", name: "お名前", model: "", type: "text", items: [
                                         { name: "required", message: "Required" },
-                                        { name: "md-maxlength", message: "Max" }
-                                    ]
+                                        { name: "md-maxlength", message: "Max" }]
                                 },
                                 {
                                     label: "次へ",
@@ -411,14 +402,9 @@ var Configure = (function () {
                             headline: "お歳は？",
                             items: [
                                 {
-                                    label: "お歳",
-                                    name: "お歳",
-                                    model: "",
-                                    type: "text",
-                                    items: [
+                                    label: "お歳", name: "お歳", model: "", type: "text", items: [
                                         { name: "required", message: "Required" },
-                                        { name: "md-maxlength", message: "Max" }
-                                    ]
+                                        { name: "md-maxlength", message: "Max" }]
                                 },
                                 { label: "その他", name: "その他", model: "", type: "text", items: [] },
                                 {
@@ -470,7 +456,7 @@ var Configure = (function () {
                                     name: "痛いところ",
                                     model: "",
                                     type: "picture",
-                                    path: 'schema.png',
+                                    path: 'schema1.png',
                                     width: 300,
                                     height: 600
                                 }
@@ -512,11 +498,12 @@ var Configure = (function () {
                             items: [
                                 { label: "現在、治療中の病気がありますか", name: "治療中の病気", model: "", type: "check" },
                                 {
-                                    label: "症状",
-                                    name: "症状",
-                                    model: "",
-                                    type: "select",
-                                    items: ["糖尿病", "ぜんそく", "心臓病", "高血圧", "肝臓病", "腎臓病"]
+                                    label: "症状", name: "症状", model: "", type: "select", items: ["糖尿病",
+                                        "ぜんそく",
+                                        "心臓病",
+                                        "高血圧",
+                                        "肝臓病",
+                                        "腎臓病"]
                                 },
                                 { label: "その他", name: "その他", model: "", type: "text", items: [] },
                                 {
@@ -545,11 +532,9 @@ var Configure = (function () {
                             items: [
                                 { label: "普段飲んでいる薬はありますか", name: "普段飲んでいる薬あり", model: "", type: "check" },
                                 {
-                                    label: "症状",
-                                    name: "症状",
-                                    model: "",
-                                    type: "select",
-                                    items: ["心臓の薬", "血をかたまりにくくする薬", "その他"]
+                                    label: "症状", name: "症状", model: "", type: "select", items: ["心臓の薬",
+                                        "血をかたまりにくくする薬",
+                                        "その他"]
                                 },
                                 { label: "その他", name: "その他", model: "", type: "text", items: [] },
                                 { label: "今までに大きな病気にかかったり手術を受けたことがありますか", name: "大きな病気あり", model: "", type: "check" },
@@ -662,9 +647,7 @@ var Configure = (function () {
                     ]
                 },
                 {
-                    Name: "整形外科",
-                    ReadOnly: true,
-                    Pages: [
+                    Name: "整形外科", ReadOnly: true, Pages: [
                         {
                             headline: "身長を入力して下さい",
                             items: [
@@ -765,7 +748,7 @@ var Configure = (function () {
                                     name: "痛いところ",
                                     model: "",
                                     type: "picture",
-                                    path: 'schema.png',
+                                    path: 'schema1.png',
                                     width: 300,
                                     height: 600
                                 }
