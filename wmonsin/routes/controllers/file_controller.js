@@ -356,8 +356,8 @@ var FileController = (function () {
                                 conn.db.collection('fs.files', function (error, collection) {
                                     if (!error) {
                                         if (collection) {
-                                            //var query = JSON.parse(decodeURIComponent(request.params.query));
-                                            collection.find({}).toArray(function (error, docs) {
+                                            var query = JSON.parse(decodeURIComponent(request.params.query));
+                                            collection.find(query).toArray(function (error, docs) {
                                                 if (!error) {
                                                     conn.db.close();
                                                     logger.trace("end /file/query/:query");
