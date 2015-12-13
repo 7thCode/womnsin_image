@@ -132,30 +132,6 @@ body .gwd-gen-2efjgwdanimation {
     -webkit-animation-timing-function: linear;
   }
 }
-.ng-enter,
-.ng-leave,
-.ng-move {
-  -webkit-transition: opacity 0.15s linear;
-  transition: opacity 0.15s linear;
-}
-.ng-enter {
-  opacity: 0;
-}
-.ng-enter.ng-enter-active {
-  opacity: 1;
-}
-.ng-leave {
-  opacity: 1;
-}
-.ng-leave.ng-leave-active {
-  opacity: 0;
-}
-.ng-move {
-  opacity: .5;
-}
-.ng-move.ng-move-active {
-  opacity: 1;
-}
 .department-content {
   background-color: #A0A0FF;
 }
@@ -165,11 +141,11 @@ body .gwd-gen-2efjgwdanimation {
   left: 50%;
 }
 .department-button1 {
-  background-color: #ff1744;
+  background-color: #FF1744;
   z-index: 1;
 }
 .department-button2 {
-  background-color: #ffb300;
+  background-color: #FFB300;
   z-index: 1;
 }
 .department-button3 {
@@ -177,7 +153,7 @@ body .gwd-gen-2efjgwdanimation {
   z-index: 1;
 }
 .department-button4 {
-  background-color: #69f0ae;
+  background-color: #69F0AE;
   z-index: 1;
 }
 .department-button5 {
@@ -271,3 +247,35 @@ md-sidenav.md-closed.md-locked-open-add-active {
 .toolbar {
   z-index: 10;
 }
+/*
+.ng-enter,
+.ng-leave,
+.ng-move {
+  -webkit-transition: opacity 0.15s linear;
+  transition: opacity 0.15s linear;
+}
+
+.ng-enter {
+  opacity: 0;
+}
+
+.ng-enter.ng-enter-active {
+  opacity: 1;
+}
+
+.ng-leave {
+  opacity: 1;
+}
+
+.ng-leave.ng-leave-active {
+  opacity: 0;
+}
+
+.ng-move {
+  opacity: .5;
+}
+
+.ng-move.ng-move-active {
+  opacity: 1;
+}
+*/
