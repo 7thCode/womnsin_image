@@ -410,3 +410,85 @@
 [2015-12-17 23:32:37.533] [TRACE] request - end /config
 [2015-12-17 23:32:37.533] [TRACE] request - |exit Authenticate 16000
 [2015-12-17 23:32:37.534] [TRACE] request - |exit Guard 
+[2015-12-17 23:37:09.112] [TRACE] request - begin /account/query/:query
+[2015-12-17 23:37:09.112] [TRACE] request - |enter Guard 
+[2015-12-17 23:37:09.112] [TRACE] request - |exit Guard 
+[2015-12-17 23:37:09.114] [TRACE] request - |enter Find 14000
+[2015-12-17 23:37:09.115] [TRACE] request - end /account/query/:query
+[2015-12-17 23:37:09.115] [TRACE] request - |exit Find 14000
+[2015-12-17 23:37:14.635] [TRACE] request - begin /account/:id
+[2015-12-17 23:37:14.635] [TRACE] request - |enter Guard 
+[2015-12-17 23:37:14.635] [TRACE] request - |enter Authenticate 11000
+[2015-12-17 23:37:14.636] [TRACE] request - |exit Authenticate 11000
+[2015-12-17 23:37:14.636] [TRACE] request - |exit Guard 
+[2015-12-17 23:37:14.638] [TRACE] request - |enter FindById 11000
+[2015-12-17 23:37:14.639] [TRACE] request - end /account/:id
+[2015-12-17 23:37:14.639] [TRACE] request - |exit FindById 11000
+[2015-12-17 23:39:02.185] [TRACE] request - begin /account/query/:query
+[2015-12-17 23:39:02.186] [TRACE] request - |enter Guard 
+[2015-12-17 23:39:02.186] [TRACE] request - |exit Guard 
+[2015-12-17 23:39:02.187] [TRACE] request - |enter Find 14000
+[2015-12-17 23:39:02.187] [TRACE] request - end /account/query/:query
+[2015-12-17 23:39:02.187] [TRACE] request - |exit Find 14000
+[2015-12-17 23:39:28.024] [TRACE] request - begin /account/query/:query
+[2015-12-17 23:39:28.024] [TRACE] request - |enter Guard 
+[2015-12-17 23:39:28.024] [TRACE] request - |exit Guard 
+[2015-12-17 23:39:28.025] [TRACE] request - |enter Find 14000
+[2015-12-17 23:39:28.026] [TRACE] request - end /account/query/:query
+[2015-12-17 23:39:28.026] [TRACE] request - |exit Find 14000
+[2015-12-17 23:39:56.134] [TRACE] request - begin /account/query/:query
+[2015-12-17 23:39:56.134] [TRACE] request - |enter Guard 
+[2015-12-17 23:39:56.134] [TRACE] request - |exit Guard 
+[2015-12-17 23:39:56.135] [TRACE] request - |enter Find 14000
+[2015-12-17 23:39:56.136] [TRACE] request - end /account/query/:query
+[2015-12-17 23:39:56.136] [TRACE] request - |exit Find 14000
+[2015-12-17 23:40:52.124] [TRACE] request - begin /account/query/:query
+[2015-12-17 23:40:52.124] [TRACE] request - |enter Guard 
+[2015-12-17 23:40:52.124] [TRACE] request - |exit Guard 
+[2015-12-17 23:40:52.125] [TRACE] request - |enter Find 14000
+[2015-12-17 23:40:52.126] [TRACE] request - end /account/query/:query
+[2015-12-17 23:40:52.126] [TRACE] request - |exit Find 14000
+[2015-12-17 23:41:40.976] [TRACE] request - begin /account/query/:query
+[2015-12-17 23:41:40.976] [TRACE] request - |enter Guard 
+[2015-12-17 23:41:40.976] [TRACE] request - |exit Guard 
+[2015-12-17 23:41:40.977] [TRACE] request - |enter Find 14000
+[2015-12-17 23:41:40.978] [TRACE] request - end /account/query/:query
+[2015-12-17 23:41:40.978] [TRACE] request - |exit Find 14000
+[2015-12-17 23:42:46.679] [TRACE] request - begin /account/query/:query
+[2015-12-17 23:42:46.679] [TRACE] request - |enter Guard 
+[2015-12-17 23:42:46.679] [TRACE] request - |exit Guard 
+[2015-12-17 23:42:46.680] [TRACE] request - |enter Find 14000
+[2015-12-17 23:42:46.681] [TRACE] request - end /account/query/:query
+[2015-12-17 23:42:46.681] [TRACE] request - |exit Find 14000
+[2015-12-17 23:43:05.735] [TRACE] request - begin /account/query/:query
+[2015-12-17 23:43:05.736] [TRACE] request - |enter Guard 
+[2015-12-17 23:43:05.736] [TRACE] request - |exit Guard 
+[2015-12-17 23:43:05.737] [TRACE] request - |enter Find 14000
+[2015-12-17 23:43:05.737] [TRACE] request - end /account/query/:query
+[2015-12-17 23:43:05.738] [TRACE] request - |exit Find 14000
+[2015-12-17 23:43:44.769] [TRACE] request - begin /account/query/:query
+[2015-12-17 23:43:44.769] [TRACE] request - |enter Guard 
+[2015-12-17 23:43:44.769] [TRACE] request - |exit Guard 
+[2015-12-17 23:43:44.770] [TRACE] request - |enter Find 14000
+[2015-12-17 23:43:44.771] [TRACE] request - end /account/query/:query
+[2015-12-17 23:43:44.771] [TRACE] request - |exit Find 14000
+[2015-12-17 23:44:07.381] [TRACE] request - begin /account/query/:query
+[2015-12-17 23:44:07.381] [TRACE] request - |enter Guard 
+[2015-12-17 23:44:07.382] [TRACE] request - |exit Guard 
+[2015-12-17 23:44:07.382] [TRACE] request - |enter Find 14000
+[2015-12-17 23:44:07.383] [TRACE] request - end /account/query/:query
+[2015-12-17 23:44:07.383] [TRACE] request - |exit Find 14000
+[2015-12-17 23:45:02.158] [TRACE] request - begin /account/:id
+[2015-12-17 23:45:02.158] [TRACE] request - |enter Guard 
+[2015-12-17 23:45:02.158] [TRACE] request - |enter Authenticate 11000
+[2015-12-17 23:45:02.159] [TRACE] request - |exit Authenticate 11000
+[2015-12-17 23:45:02.159] [TRACE] request - |exit Guard 
+[2015-12-17 23:45:02.160] [TRACE] request - |enter FindById 11000
+[2015-12-17 23:45:02.161] [TRACE] request - end /account/:id
+[2015-12-17 23:45:02.161] [TRACE] request - |exit FindById 11000
+[2015-12-17 23:47:17.601] [TRACE] request - begin /account/query/:query
+[2015-12-17 23:47:17.601] [TRACE] request - |enter Guard 
+[2015-12-17 23:47:17.601] [TRACE] request - |exit Guard 
+[2015-12-17 23:47:17.602] [TRACE] request - |enter Find 14000
+[2015-12-17 23:47:17.603] [TRACE] request - end /account/query/:query
+[2015-12-17 23:47:17.603] [TRACE] request - |exit Find 14000
