@@ -1029,7 +1029,7 @@ controllers.controller('PageEditController', ['$scope', '$state', '$mdDialog', '
                     templateUrl: '/backend/partials/edit/item/picture/picturecreatedialog',
                     targetEvent: null
                 }).then(function (answer) {
-                    var control = {
+                    CurrentView.Data.Pages[CurrentView.Page].picture[0] = {
                         height: 600,
                         width: 300,
                         path: answer.items.path,
@@ -1038,7 +1038,6 @@ controllers.controller('PageEditController', ['$scope', '$state', '$mdDialog', '
                         name: answer.items.name,
                         label: answer.items.label
                     };
-                    CurrentView.Data.Pages[CurrentView.Page].picture[0] = control;
                 }, function () {
                 });
             };
@@ -1625,8 +1624,7 @@ controllers.controller('PictureUpdateDialogController', ['$scope', '$mdDialog', 
         });
         $scope.images = [];
         $scope.processFiles = function (files) {
-            var filename = files[0].name;
-            $scope.items.path = filename;
+            $scope.items.path = files[0].name;
             $scope.images[0] = {};
             var fileReader = new FileReader();
             var image = new Image();
