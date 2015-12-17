@@ -1,3 +1,5 @@
 wmonsin/logs/*
 
 wmonsin/public/bower_components/*
+
+wmonsin/logs/request.log
