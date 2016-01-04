@@ -1,16 +1,856 @@
-[2015-12-23 15:54:13.179] [INFO] request - express Ok.
-[2015-12-23 15:54:13.180] [INFO] request - emitter Ok.
-[2015-12-23 15:54:14.998] [INFO] request - mongoose Ok.
-[2015-12-23 15:54:15.076] [INFO] request - Grid Ok.
-[2015-12-23 15:54:15.121] [INFO] request - lodash Ok.
-[2015-12-23 15:54:15.121] [INFO] request - fs Ok.
-[2015-12-23 15:54:15.121] [INFO] request - config Ok.
-[2015-12-23 15:54:15.121] [INFO] request - config.dbaddress : localhost
-[2015-12-23 15:54:15.176] [INFO] request - PatientModel Ok.
-[2015-12-23 15:54:15.368] [INFO] request - AccountModel Ok.
-[2015-12-23 15:54:15.402] [INFO] request - ViewModel Ok.
-[2015-12-23 15:54:15.529] [INFO] request - FileModel Ok.
-[2015-12-23 15:54:15.588] [INFO] request - ToHtml Ok.
-[2015-12-23 15:54:15.589] [INFO] request - passport Ok.
-[2015-12-23 15:54:15.627] [INFO] request - log4js Ok.
-[2015-12-23 15:54:15.645] [INFO] request - log4js Ok.
+[2016-01-04 00:08:37.041] [TRACE] request - begin /view/:id
+[2016-01-04 00:08:37.043] [TRACE] request - |enter Guard 
+[2016-01-04 00:08:37.043] [TRACE] request - |enter Authenticate 23000
+[2016-01-04 00:08:37.045] [TRACE] request - |exit Authenticate 23000
+[2016-01-04 00:08:37.045] [TRACE] request - |exit Guard 
+[2016-01-04 00:08:37.058] [TRACE] request - |enter Find 23000
+[2016-01-04 00:08:37.066] [TRACE] request - end /view/:id
+[2016-01-04 00:08:37.066] [TRACE] request - |exit Find 23000
+[2016-01-04 00:08:37.107] [TRACE] request - begin /patient/query/:query
+[2016-01-04 00:08:37.107] [TRACE] request - |enter Guard 
+[2016-01-04 00:08:37.107] [TRACE] request - |enter Authenticate 5000
+[2016-01-04 00:08:37.109] [TRACE] request - |exit Authenticate 5000
+[2016-01-04 00:08:37.109] [TRACE] request - |exit Guard 
+[2016-01-04 00:08:37.130] [TRACE] request - |enter Find 5000
+[2016-01-04 00:08:37.132] [TRACE] request - end /patient/query/:query
+[2016-01-04 00:08:37.132] [TRACE] request - |exit Find 5000
+[2016-01-04 00:08:53.763] [TRACE] request - begin /view/:id
+[2016-01-04 00:08:53.763] [TRACE] request - |enter Guard 
+[2016-01-04 00:08:53.764] [TRACE] request - |enter Authenticate 23000
+[2016-01-04 00:08:53.765] [TRACE] request - |exit Authenticate 23000
+[2016-01-04 00:08:53.765] [TRACE] request - |exit Guard 
+[2016-01-04 00:08:53.771] [TRACE] request - |enter Find 23000
+[2016-01-04 00:08:53.779] [TRACE] request - end /view/:id
+[2016-01-04 00:08:53.779] [TRACE] request - |exit Find 23000
+[2016-01-04 00:08:53.796] [TRACE] request - begin /patient/query/:query
+[2016-01-04 00:08:53.797] [TRACE] request - |enter Guard 
+[2016-01-04 00:08:53.797] [TRACE] request - |enter Authenticate 5000
+[2016-01-04 00:08:53.798] [TRACE] request - |exit Authenticate 5000
+[2016-01-04 00:08:53.798] [TRACE] request - |exit Guard 
+[2016-01-04 00:08:53.801] [TRACE] request - |enter Find 5000
+[2016-01-04 00:08:53.802] [TRACE] request - end /patient/query/:query
+[2016-01-04 00:08:53.803] [TRACE] request - |exit Find 5000
+[2016-01-04 00:09:02.811] [TRACE] request - begin /patient/query/:query
+[2016-01-04 00:09:02.812] [TRACE] request - |enter Guard 
+[2016-01-04 00:09:02.812] [TRACE] request - |enter Authenticate 5000
+[2016-01-04 00:09:02.812] [TRACE] request - |exit Authenticate 5000
+[2016-01-04 00:09:02.812] [TRACE] request - |exit Guard 
+[2016-01-04 00:09:02.813] [TRACE] request - |enter Find 5000
+[2016-01-04 00:09:02.814] [TRACE] request - end /patient/query/:query
+[2016-01-04 00:09:02.815] [TRACE] request - |exit Find 5000
+[2016-01-04 00:09:04.090] [TRACE] request - begin /account/query/:query
+[2016-01-04 00:09:04.090] [TRACE] request - |enter Guard 
+[2016-01-04 00:09:04.091] [TRACE] request - |exit Guard 
+[2016-01-04 00:09:04.094] [TRACE] request - |enter Find 14000
+[2016-01-04 00:09:04.098] [TRACE] request - end /account/query/:query
+[2016-01-04 00:09:04.098] [TRACE] request - |exit Find 14000
+[2016-01-04 00:09:05.445] [TRACE] request - begin /patient/query/:query
+[2016-01-04 00:09:05.446] [TRACE] request - |enter Guard 
+[2016-01-04 00:09:05.446] [TRACE] request - |enter Authenticate 5000
+[2016-01-04 00:09:05.446] [TRACE] request - |exit Authenticate 5000
+[2016-01-04 00:09:05.447] [TRACE] request - |exit Guard 
+[2016-01-04 00:09:05.448] [TRACE] request - |enter Find 5000
+[2016-01-04 00:09:05.450] [TRACE] request - end /patient/query/:query
+[2016-01-04 00:09:05.450] [TRACE] request - |exit Find 5000
+[2016-01-04 00:09:06.800] [TRACE] request - begin /patient/query/:query
+[2016-01-04 00:09:06.801] [TRACE] request - |enter Guard 
+[2016-01-04 00:09:06.801] [TRACE] request - |enter Authenticate 5000
+[2016-01-04 00:09:06.801] [TRACE] request - |exit Authenticate 5000
+[2016-01-04 00:09:06.801] [TRACE] request - |exit Guard 
+[2016-01-04 00:09:06.803] [TRACE] request - begin /patient/query/:query
+[2016-01-04 00:09:06.803] [TRACE] request - |enter Guard 
+[2016-01-04 00:09:06.803] [TRACE] request - |enter Authenticate 5000
+[2016-01-04 00:09:06.803] [FATAL] request - Unexpected token o 100000
+[2016-01-04 00:09:06.805] [TRACE] request - |enter Find 5000
+[2016-01-04 00:09:06.806] [TRACE] request - end /patient/query/:query
+[2016-01-04 00:09:06.806] [TRACE] request - |exit Find 5000
+[2016-01-04 00:09:06.859] [TRACE] request - begin /patient/query/:query
+[2016-01-04 00:09:06.859] [TRACE] request - |enter Guard 
+[2016-01-04 00:09:06.862] [TRACE] request - |enter Authenticate 5000
+[2016-01-04 00:09:06.862] [FATAL] request - Unexpected token o 100000
+[2016-01-04 00:09:06.864] [TRACE] request - begin /patient/query/:query
+[2016-01-04 00:09:06.864] [TRACE] request - |enter Guard 
+[2016-01-04 00:09:06.864] [TRACE] request - |enter Authenticate 5000
+[2016-01-04 00:09:06.867] [TRACE] request - |exit Authenticate 5000
+[2016-01-04 00:09:06.867] [TRACE] request - |exit Guard 
+[2016-01-04 00:09:06.869] [TRACE] request - |enter Find 5000
+[2016-01-04 00:09:06.870] [TRACE] request - end /patient/query/:query
+[2016-01-04 00:09:06.870] [TRACE] request - |exit Find 5000
+[2016-01-04 00:09:07.937] [TRACE] request - begin /patient/query/:query
+[2016-01-04 00:09:07.937] [TRACE] request - |enter Guard 
+[2016-01-04 00:09:07.938] [TRACE] request - |enter Authenticate 5000
+[2016-01-04 00:09:07.939] [TRACE] request - |exit Authenticate 5000
+[2016-01-04 00:09:07.939] [TRACE] request - |exit Guard 
+[2016-01-04 00:09:07.939] [TRACE] request - begin /patient/query/:query
+[2016-01-04 00:09:07.940] [TRACE] request - |enter Guard 
+[2016-01-04 00:09:07.940] [TRACE] request - |enter Authenticate 5000
+[2016-01-04 00:09:07.940] [FATAL] request - Unexpected token o 100000
+[2016-01-04 00:09:07.947] [TRACE] request - |enter Find 5000
+[2016-01-04 00:09:07.953] [TRACE] request - end /patient/query/:query
+[2016-01-04 00:09:07.953] [TRACE] request - |exit Find 5000
+[2016-01-04 00:09:07.959] [TRACE] request - begin /patient/query/:query
+[2016-01-04 00:09:07.959] [TRACE] request - |enter Guard 
+[2016-01-04 00:09:07.959] [TRACE] request - |enter Authenticate 5000
+[2016-01-04 00:09:07.959] [TRACE] request - |exit Authenticate 5000
+[2016-01-04 00:09:07.960] [TRACE] request - |exit Guard 
+[2016-01-04 00:09:07.961] [TRACE] request - begin /patient/query/:query
+[2016-01-04 00:09:07.961] [TRACE] request - |enter Guard 
+[2016-01-04 00:09:07.961] [TRACE] request - |enter Authenticate 5000
+[2016-01-04 00:09:07.962] [FATAL] request - Unexpected token o 100000
+[2016-01-04 00:09:07.965] [TRACE] request - |enter Find 5000
+[2016-01-04 00:09:07.971] [TRACE] request - end /patient/query/:query
+[2016-01-04 00:09:07.971] [TRACE] request - |exit Find 5000
+[2016-01-04 00:09:10.166] [TRACE] request - begin /patient/status/:id
+[2016-01-04 00:09:10.166] [TRACE] request - |enter Guard 
+[2016-01-04 00:09:10.166] [TRACE] request - |enter Authenticate 7000
+[2016-01-04 00:09:10.167] [TRACE] request - |exit Authenticate 7000
+[2016-01-04 00:09:10.167] [TRACE] request - |exit Guard 
+[2016-01-04 00:09:10.168] [TRACE] request - begin /patient/:id
+[2016-01-04 00:09:10.168] [TRACE] request - |enter Guard 
+[2016-01-04 00:09:10.168] [TRACE] request - |enter Authenticate 2000
+[2016-01-04 00:09:10.168] [TRACE] request - |exit Authenticate 2000
+[2016-01-04 00:09:10.168] [TRACE] request - |exit Guard 
+[2016-01-04 00:09:10.171] [TRACE] request - |enter FindById 7000
+[2016-01-04 00:09:10.172] [TRACE] request - end /patient/status/:id
+[2016-01-04 00:09:10.172] [TRACE] request - |exit FindById 7000
+[2016-01-04 00:09:10.173] [TRACE] request - |enter FindById 2000
+[2016-01-04 00:09:10.176] [TRACE] request - end /patient/:id
+[2016-01-04 00:09:10.176] [TRACE] request - |exit FindById 2000
+[2016-01-04 00:09:10.212] [TRACE] request - begin /patient/status/:id
+[2016-01-04 00:09:10.212] [TRACE] request - |enter Guard 
+[2016-01-04 00:09:10.212] [TRACE] request - |enter Authenticate 7000
+[2016-01-04 00:09:10.212] [TRACE] request - |exit Authenticate 7000
+[2016-01-04 00:09:10.212] [TRACE] request - |exit Guard 
+[2016-01-04 00:09:10.215] [TRACE] request - |enter FindById 7000
+[2016-01-04 00:09:10.216] [TRACE] request - end /patient/status/:id
+[2016-01-04 00:09:10.216] [TRACE] request - |exit FindById 7000
+[2016-01-04 00:09:10.229] [TRACE] request - begin /patient/status/:id
+[2016-01-04 00:09:10.229] [TRACE] request - |enter Guard 
+[2016-01-04 00:09:10.229] [TRACE] request - |enter Authenticate 7000
+[2016-01-04 00:09:10.229] [TRACE] request - |exit Authenticate 7000
+[2016-01-04 00:09:10.229] [TRACE] request - |exit Guard 
+[2016-01-04 00:09:10.232] [TRACE] request - |enter FindById 7000
+[2016-01-04 00:09:10.233] [TRACE] request - end /patient/status/:id
+[2016-01-04 00:09:10.233] [TRACE] request - |exit FindById 7000
+[2016-01-04 00:09:10.789] [TRACE] request - begin /file/:name
+[2016-01-04 00:09:10.861] [TRACE] request - end /file/:name
+[2016-01-04 00:09:31.341] [TRACE] request - begin /patient/information/:id
+[2016-01-04 00:09:31.341] [TRACE] request - |enter Guard 
+[2016-01-04 00:09:31.342] [TRACE] request - |enter Authenticate 8100
+[2016-01-04 00:09:31.342] [TRACE] request - |enter If 8100
+[2016-01-04 00:09:31.343] [TRACE] request - |exit If 8100
+[2016-01-04 00:09:31.344] [TRACE] request - |exit Authenticate 8100
+[2016-01-04 00:09:31.344] [TRACE] request - |exit Guard 
+[2016-01-04 00:09:31.350] [TRACE] request - |enter FindById 8100
+[2016-01-04 00:09:31.354] [TRACE] request - |exit FindById 8100
+[2016-01-04 00:09:31.364] [TRACE] request - |enter Save 8100
+[2016-01-04 00:09:31.365] [TRACE] request - end /patient/information/:id
+[2016-01-04 00:09:31.365] [TRACE] request - |exit Save 8100
+[2016-01-04 00:09:44.346] [TRACE] request - begin /account/query/:query
+[2016-01-04 00:09:44.346] [TRACE] request - |enter Guard 
+[2016-01-04 00:09:44.347] [TRACE] request - |exit Guard 
+[2016-01-04 00:09:44.349] [TRACE] request - |enter Find 14000
+[2016-01-04 00:09:44.351] [TRACE] request - end /account/query/:query
+[2016-01-04 00:09:44.351] [TRACE] request - |exit Find 14000
+[2016-01-04 00:09:46.781] [TRACE] request - begin /patient/query/:query
+[2016-01-04 00:09:46.781] [TRACE] request - |enter Guard 
+[2016-01-04 00:09:46.781] [TRACE] request - |enter Authenticate 5000
+[2016-01-04 00:09:46.781] [TRACE] request - |exit Authenticate 5000
+[2016-01-04 00:09:46.782] [TRACE] request - |exit Guard 
+[2016-01-04 00:09:46.784] [TRACE] request - |enter Find 5000
+[2016-01-04 00:09:46.785] [TRACE] request - end /patient/query/:query
+[2016-01-04 00:09:46.785] [TRACE] request - |exit Find 5000
+[2016-01-04 00:09:49.283] [TRACE] request - begin /patient/query/:query
+[2016-01-04 00:09:49.283] [TRACE] request - |enter Guard 
+[2016-01-04 00:09:49.283] [TRACE] request - |enter Authenticate 5000
+[2016-01-04 00:09:49.284] [TRACE] request - |exit Authenticate 5000
+[2016-01-04 00:09:49.284] [TRACE] request - |exit Guard 
+[2016-01-04 00:09:49.285] [TRACE] request - begin /patient/query/:query
+[2016-01-04 00:09:49.285] [TRACE] request - |enter Guard 
+[2016-01-04 00:09:49.285] [TRACE] request - |enter Authenticate 5000
+[2016-01-04 00:09:49.285] [FATAL] request - Unexpected token o 100000
+[2016-01-04 00:09:49.294] [TRACE] request - |enter Find 5000
+[2016-01-04 00:09:49.296] [TRACE] request - end /patient/query/:query
+[2016-01-04 00:09:49.296] [TRACE] request - |exit Find 5000
+[2016-01-04 00:09:49.303] [TRACE] request - begin /patient/query/:query
+[2016-01-04 00:09:49.303] [TRACE] request - |enter Guard 
+[2016-01-04 00:09:49.303] [TRACE] request - |enter Authenticate 5000
+[2016-01-04 00:09:49.303] [FATAL] request - Unexpected token o 100000
+[2016-01-04 00:09:49.308] [TRACE] request - begin /patient/query/:query
+[2016-01-04 00:09:49.308] [TRACE] request - |enter Guard 
+[2016-01-04 00:09:49.308] [TRACE] request - |enter Authenticate 5000
+[2016-01-04 00:09:49.308] [TRACE] request - |exit Authenticate 5000
+[2016-01-04 00:09:49.308] [TRACE] request - |exit Guard 
+[2016-01-04 00:09:49.310] [TRACE] request - |enter Find 5000
+[2016-01-04 00:09:49.311] [TRACE] request - end /patient/query/:query
+[2016-01-04 00:09:49.311] [TRACE] request - |exit Find 5000
+[2016-01-04 00:09:50.089] [TRACE] request - begin /patient/query/:query
+[2016-01-04 00:09:50.090] [TRACE] request - |enter Guard 
+[2016-01-04 00:09:50.090] [TRACE] request - |enter Authenticate 5000
+[2016-01-04 00:09:50.090] [TRACE] request - |exit Authenticate 5000
+[2016-01-04 00:09:50.090] [TRACE] request - |exit Guard 
+[2016-01-04 00:09:50.091] [TRACE] request - begin /patient/query/:query
+[2016-01-04 00:09:50.091] [TRACE] request - |enter Guard 
+[2016-01-04 00:09:50.091] [TRACE] request - |enter Authenticate 5000
+[2016-01-04 00:09:50.091] [FATAL] request - Unexpected token o 100000
+[2016-01-04 00:09:50.097] [TRACE] request - |enter Find 5000
+[2016-01-04 00:09:50.105] [TRACE] request - end /patient/query/:query
+[2016-01-04 00:09:50.105] [TRACE] request - |exit Find 5000
+[2016-01-04 00:09:50.111] [TRACE] request - begin /patient/query/:query
+[2016-01-04 00:09:50.111] [TRACE] request - |enter Guard 
+[2016-01-04 00:09:50.111] [TRACE] request - |enter Authenticate 5000
+[2016-01-04 00:09:50.111] [FATAL] request - Unexpected token o 100000
+[2016-01-04 00:09:50.114] [TRACE] request - begin /patient/query/:query
+[2016-01-04 00:09:50.114] [TRACE] request - |enter Guard 
+[2016-01-04 00:09:50.114] [TRACE] request - |enter Authenticate 5000
+[2016-01-04 00:09:50.115] [TRACE] request - |exit Authenticate 5000
+[2016-01-04 00:09:50.115] [TRACE] request - |exit Guard 
+[2016-01-04 00:09:50.121] [TRACE] request - |enter Find 5000
+[2016-01-04 00:09:50.126] [TRACE] request - end /patient/query/:query
+[2016-01-04 00:09:50.126] [TRACE] request - |exit Find 5000
+[2016-01-04 00:10:17.243] [TRACE] request - begin /view/:id
+[2016-01-04 00:10:17.244] [TRACE] request - |enter Guard 
+[2016-01-04 00:10:17.244] [TRACE] request - |enter Authenticate 23000
+[2016-01-04 00:10:17.245] [TRACE] request - |exit Authenticate 23000
+[2016-01-04 00:10:17.246] [TRACE] request - |exit Guard 
+[2016-01-04 00:10:17.257] [TRACE] request - |enter Find 23000
+[2016-01-04 00:10:17.272] [TRACE] request - end /view/:id
+[2016-01-04 00:10:17.272] [TRACE] request - |exit Find 23000
+[2016-01-04 00:10:20.977] [TRACE] request - begin /account/query/:query
+[2016-01-04 00:10:20.978] [TRACE] request - |enter Guard 
+[2016-01-04 00:10:20.978] [TRACE] request - |exit Guard 
+[2016-01-04 00:10:20.983] [TRACE] request - |enter Find 14000
+[2016-01-04 00:10:20.986] [TRACE] request - end /account/query/:query
+[2016-01-04 00:10:20.986] [TRACE] request - |exit Find 14000
+[2016-01-04 00:10:22.495] [TRACE] request - begin /patient/query/:query
+[2016-01-04 00:10:22.496] [TRACE] request - |enter Guard 
+[2016-01-04 00:10:22.496] [TRACE] request - |enter Authenticate 5000
+[2016-01-04 00:10:22.497] [TRACE] request - |exit Authenticate 5000
+[2016-01-04 00:10:22.497] [TRACE] request - |exit Guard 
+[2016-01-04 00:10:22.500] [TRACE] request - |enter Find 5000
+[2016-01-04 00:10:22.501] [TRACE] request - end /patient/query/:query
+[2016-01-04 00:10:22.501] [TRACE] request - |exit Find 5000
+[2016-01-04 00:10:51.473] [TRACE] request - begin /account/query/:query
+[2016-01-04 00:10:51.473] [TRACE] request - |enter Guard 
+[2016-01-04 00:10:51.474] [TRACE] request - |exit Guard 
+[2016-01-04 00:10:51.479] [TRACE] request - |enter Find 14000
+[2016-01-04 00:10:51.481] [TRACE] request - end /account/query/:query
+[2016-01-04 00:10:51.482] [TRACE] request - |exit Find 14000
+[2016-01-04 00:10:53.104] [TRACE] request - begin /patient/query/:query
+[2016-01-04 00:10:53.105] [TRACE] request - |enter Guard 
+[2016-01-04 00:10:53.105] [TRACE] request - |enter Authenticate 5000
+[2016-01-04 00:10:53.106] [TRACE] request - |exit Authenticate 5000
+[2016-01-04 00:10:53.106] [TRACE] request - |exit Guard 
+[2016-01-04 00:10:53.108] [TRACE] request - |enter Find 5000
+[2016-01-04 00:10:53.110] [TRACE] request - end /patient/query/:query
+[2016-01-04 00:10:53.110] [TRACE] request - |exit Find 5000
+[2016-01-04 00:10:55.056] [TRACE] request - begin /patient/count/:query
+[2016-01-04 00:10:55.057] [TRACE] request - |enter Guard 
+[2016-01-04 00:10:55.057] [TRACE] request - |enter Authenticate 6000
+[2016-01-04 00:10:55.057] [TRACE] request - |exit Authenticate 6000
+[2016-01-04 00:10:55.058] [TRACE] request - |exit Guard 
+[2016-01-04 00:10:55.207] [TRACE] request - begin /view/:id
+[2016-01-04 00:10:55.207] [TRACE] request - |enter Guard 
+[2016-01-04 00:10:55.207] [TRACE] request - |enter Authenticate 23000
+[2016-01-04 00:10:55.208] [TRACE] request - |exit Authenticate 23000
+[2016-01-04 00:10:55.208] [TRACE] request - |exit Guard 
+[2016-01-04 00:10:55.216] [TRACE] request - |enter Find 23000
+[2016-01-04 00:10:55.221] [TRACE] request - end /view/:id
+[2016-01-04 00:10:55.221] [TRACE] request - |exit Find 23000
+[2016-01-04 00:11:09.687] [TRACE] request - begin /patient/accept
+[2016-01-04 00:11:09.687] [TRACE] request - |enter Guard 
+[2016-01-04 00:11:09.688] [TRACE] request - |exit Guard 
+[2016-01-04 00:11:09.689] [TRACE] request - |enter Find 1000
+[2016-01-04 00:11:09.692] [TRACE] request - |exit Find 1000
+[2016-01-04 00:11:09.700] [TRACE] request - |enter Save 1000
+[2016-01-04 00:11:09.702] [TRACE] request - end /patient/accept
+[2016-01-04 00:11:09.702] [TRACE] request - |exit Save 1000
+[2016-01-04 00:11:09.708] [TRACE] request - begin /patient/query/:query
+[2016-01-04 00:11:09.708] [TRACE] request - |enter Guard 
+[2016-01-04 00:11:09.709] [TRACE] request - |enter Authenticate 5000
+[2016-01-04 00:11:09.709] [TRACE] request - |exit Authenticate 5000
+[2016-01-04 00:11:09.709] [TRACE] request - |exit Guard 
+[2016-01-04 00:11:09.711] [TRACE] request - |enter Find 5000
+[2016-01-04 00:11:09.713] [TRACE] request - end /patient/query/:query
+[2016-01-04 00:11:09.713] [TRACE] request - |exit Find 5000
+[2016-01-04 00:11:10.024] [TRACE] request - begin /patient/query/:query
+[2016-01-04 00:11:10.024] [TRACE] request - |enter Guard 
+[2016-01-04 00:11:10.024] [TRACE] request - |enter Authenticate 5000
+[2016-01-04 00:11:10.024] [TRACE] request - |exit Authenticate 5000
+[2016-01-04 00:11:10.025] [TRACE] request - |exit Guard 
+[2016-01-04 00:11:10.026] [TRACE] request - |enter Find 5000
+[2016-01-04 00:11:10.027] [TRACE] request - end /patient/query/:query
+[2016-01-04 00:11:10.028] [TRACE] request - |exit Find 5000
+[2016-01-04 00:11:10.139] [TRACE] request - begin /patient/query/:query
+[2016-01-04 00:11:10.139] [TRACE] request - |enter Guard 
+[2016-01-04 00:11:10.140] [TRACE] request - |enter Authenticate 5000
+[2016-01-04 00:11:10.140] [TRACE] request - |exit Authenticate 5000
+[2016-01-04 00:11:10.140] [TRACE] request - |exit Guard 
+[2016-01-04 00:11:10.142] [TRACE] request - |enter Find 5000
+[2016-01-04 00:11:10.143] [TRACE] request - end /patient/query/:query
+[2016-01-04 00:11:10.143] [TRACE] request - |exit Find 5000
+[2016-01-04 00:12:35.007] [TRACE] request - begin /patient/:id
+[2016-01-04 00:12:35.008] [TRACE] request - |enter Guard 
+[2016-01-04 00:12:35.008] [TRACE] request - |enter Authenticate 2000
+[2016-01-04 00:12:35.008] [TRACE] request - |exit Authenticate 2000
+[2016-01-04 00:12:35.008] [TRACE] request - |exit Guard 
+[2016-01-04 00:12:35.010] [TRACE] request - |enter FindById 2000
+[2016-01-04 00:12:35.011] [TRACE] request - end /patient/:id
+[2016-01-04 00:12:35.012] [TRACE] request - |exit FindById 2000
+[2016-01-04 00:12:47.616] [TRACE] request - begin /file/:name
+[2016-01-04 00:12:47.639] [TRACE] request - end /file/:name
+[2016-01-04 00:13:21.116] [TRACE] request - begin /patient/:id
+[2016-01-04 00:13:21.116] [TRACE] request - |enter Guard 
+[2016-01-04 00:13:21.117] [TRACE] request - |enter Authenticate 3000
+[2016-01-04 00:13:21.117] [TRACE] request - |exit Authenticate 3000
+[2016-01-04 00:13:21.117] [TRACE] request - |exit Guard 
+[2016-01-04 00:13:21.119] [TRACE] request - |enter FindById 3000
+[2016-01-04 00:13:21.120] [TRACE] request - |exit FindById 3000
+[2016-01-04 00:13:21.150] [TRACE] request - |enter Save 3000
+[2016-01-04 00:13:21.152] [TRACE] request - end /patient/:id
+[2016-01-04 00:13:21.153] [TRACE] request - |exit Save 3000
+[2016-01-04 00:13:21.174] [TRACE] request - begin /view/:id
+[2016-01-04 00:13:21.174] [TRACE] request - |enter Guard 
+[2016-01-04 00:13:21.174] [TRACE] request - |enter Authenticate 23000
+[2016-01-04 00:13:21.175] [TRACE] request - |exit Authenticate 23000
+[2016-01-04 00:13:21.175] [TRACE] request - |exit Guard 
+[2016-01-04 00:13:21.181] [TRACE] request - |enter Find 23000
+[2016-01-04 00:13:21.184] [TRACE] request - end /view/:id
+[2016-01-04 00:13:21.184] [TRACE] request - |exit Find 23000
+[2016-01-04 00:13:21.192] [TRACE] request - begin /patient/query/:query
+[2016-01-04 00:13:21.192] [TRACE] request - |enter Guard 
+[2016-01-04 00:13:21.192] [TRACE] request - |enter Authenticate 5000
+[2016-01-04 00:13:21.192] [TRACE] request - |exit Authenticate 5000
+[2016-01-04 00:13:21.192] [TRACE] request - |exit Guard 
+[2016-01-04 00:13:21.194] [TRACE] request - |enter Find 5000
+[2016-01-04 00:13:21.196] [TRACE] request - end /patient/query/:query
+[2016-01-04 00:13:21.196] [TRACE] request - |exit Find 5000
+[2016-01-04 00:13:22.443] [TRACE] request - begin /patient/query/:query
+[2016-01-04 00:13:22.443] [TRACE] request - |enter Guard 
+[2016-01-04 00:13:22.443] [TRACE] request - |enter Authenticate 5000
+[2016-01-04 00:13:22.443] [TRACE] request - |exit Authenticate 5000
+[2016-01-04 00:13:22.443] [TRACE] request - |exit Guard 
+[2016-01-04 00:13:22.446] [TRACE] request - |enter Find 5000
+[2016-01-04 00:13:22.448] [TRACE] request - end /patient/query/:query
+[2016-01-04 00:13:22.448] [TRACE] request - |exit Find 5000
+[2016-01-04 00:13:22.453] [TRACE] request - begin /patient/query/:query
+[2016-01-04 00:13:22.453] [TRACE] request - |enter Guard 
+[2016-01-04 00:13:22.453] [TRACE] request - |enter Authenticate 5000
+[2016-01-04 00:13:22.453] [TRACE] request - |exit Authenticate 5000
+[2016-01-04 00:13:22.453] [TRACE] request - |exit Guard 
+[2016-01-04 00:13:22.455] [TRACE] request - |enter Find 5000
+[2016-01-04 00:13:22.456] [TRACE] request - end /patient/query/:query
+[2016-01-04 00:13:22.457] [TRACE] request - |exit Find 5000
+[2016-01-04 00:13:22.460] [TRACE] request - begin /patient/query/:query
+[2016-01-04 00:13:22.460] [TRACE] request - |enter Guard 
+[2016-01-04 00:13:22.460] [TRACE] request - |enter Authenticate 5000
+[2016-01-04 00:13:22.460] [TRACE] request - |exit Authenticate 5000
+[2016-01-04 00:13:22.461] [TRACE] request - |exit Guard 
+[2016-01-04 00:13:22.463] [TRACE] request - |enter Find 5000
+[2016-01-04 00:13:22.464] [TRACE] request - end /patient/query/:query
+[2016-01-04 00:13:22.464] [TRACE] request - |exit Find 5000
+[2016-01-04 00:13:22.468] [TRACE] request - begin /patient/query/:query
+[2016-01-04 00:13:22.468] [TRACE] request - |enter Guard 
+[2016-01-04 00:13:22.468] [TRACE] request - |enter Authenticate 5000
+[2016-01-04 00:13:22.468] [TRACE] request - |exit Authenticate 5000
+[2016-01-04 00:13:22.468] [TRACE] request - |exit Guard 
+[2016-01-04 00:13:22.470] [TRACE] request - |enter Find 5000
+[2016-01-04 00:13:22.473] [TRACE] request - end /patient/query/:query
+[2016-01-04 00:13:22.473] [TRACE] request - |exit Find 5000
+[2016-01-04 00:13:22.477] [TRACE] request - begin /patient/query/:query
+[2016-01-04 00:13:22.477] [TRACE] request - |enter Guard 
+[2016-01-04 00:13:22.477] [TRACE] request - |enter Authenticate 5000
+[2016-01-04 00:13:22.477] [TRACE] request - |exit Authenticate 5000
+[2016-01-04 00:13:22.477] [TRACE] request - |exit Guard 
+[2016-01-04 00:13:22.479] [TRACE] request - |enter Find 5000
+[2016-01-04 00:13:22.480] [TRACE] request - end /patient/query/:query
+[2016-01-04 00:13:22.481] [TRACE] request - |exit Find 5000
+[2016-01-04 00:13:22.484] [TRACE] request - begin /patient/query/:query
+[2016-01-04 00:13:22.485] [TRACE] request - |enter Guard 
+[2016-01-04 00:13:22.485] [TRACE] request - |enter Authenticate 5000
+[2016-01-04 00:13:22.485] [TRACE] request - |exit Authenticate 5000
+[2016-01-04 00:13:22.485] [TRACE] request - |exit Guard 
+[2016-01-04 00:13:22.487] [TRACE] request - |enter Find 5000
+[2016-01-04 00:13:22.488] [TRACE] request - end /patient/query/:query
+[2016-01-04 00:13:22.488] [TRACE] request - |exit Find 5000
+[2016-01-04 00:13:22.492] [TRACE] request - begin /patient/query/:query
+[2016-01-04 00:13:22.492] [TRACE] request - |enter Guard 
+[2016-01-04 00:13:22.492] [TRACE] request - |enter Authenticate 5000
+[2016-01-04 00:13:22.492] [TRACE] request - |exit Authenticate 5000
+[2016-01-04 00:13:22.492] [TRACE] request - |exit Guard 
+[2016-01-04 00:13:22.494] [TRACE] request - |enter Find 5000
+[2016-01-04 00:13:22.495] [TRACE] request - end /patient/query/:query
+[2016-01-04 00:13:22.495] [TRACE] request - |exit Find 5000
+[2016-01-04 00:13:33.235] [TRACE] request - begin /patient/status/:id
+[2016-01-04 00:13:33.235] [TRACE] request - |enter Guard 
+[2016-01-04 00:13:33.235] [TRACE] request - |enter Authenticate 7000
+[2016-01-04 00:13:33.235] [TRACE] request - |exit Authenticate 7000
+[2016-01-04 00:13:33.235] [TRACE] request - |exit Guard 
+[2016-01-04 00:13:33.236] [TRACE] request - begin /patient/:id
+[2016-01-04 00:13:33.236] [TRACE] request - |enter Guard 
+[2016-01-04 00:13:33.236] [TRACE] request - |enter Authenticate 2000
+[2016-01-04 00:13:33.236] [TRACE] request - |exit Authenticate 2000
+[2016-01-04 00:13:33.236] [TRACE] request - |exit Guard 
+[2016-01-04 00:13:33.238] [TRACE] request - |enter FindById 7000
+[2016-01-04 00:13:33.239] [TRACE] request - end /patient/status/:id
+[2016-01-04 00:13:33.239] [TRACE] request - |exit FindById 7000
+[2016-01-04 00:13:33.240] [TRACE] request - |enter FindById 2000
+[2016-01-04 00:13:33.241] [TRACE] request - end /patient/:id
+[2016-01-04 00:13:33.242] [TRACE] request - |exit FindById 2000
+[2016-01-04 00:13:33.273] [TRACE] request - begin /patient/status/:id
+[2016-01-04 00:13:33.273] [TRACE] request - |enter Guard 
+[2016-01-04 00:13:33.273] [TRACE] request - |enter Authenticate 7000
+[2016-01-04 00:13:33.273] [TRACE] request - |exit Authenticate 7000
+[2016-01-04 00:13:33.273] [TRACE] request - |exit Guard 
+[2016-01-04 00:13:33.277] [TRACE] request - |enter FindById 7000
+[2016-01-04 00:13:33.278] [TRACE] request - end /patient/status/:id
+[2016-01-04 00:13:33.278] [TRACE] request - |exit FindById 7000
+[2016-01-04 00:13:33.288] [TRACE] request - begin /patient/status/:id
+[2016-01-04 00:13:33.288] [TRACE] request - |enter Guard 
+[2016-01-04 00:13:33.288] [TRACE] request - |enter Authenticate 7000
+[2016-01-04 00:13:33.288] [TRACE] request - |exit Authenticate 7000
+[2016-01-04 00:13:33.288] [TRACE] request - |exit Guard 
+[2016-01-04 00:13:33.291] [TRACE] request - |enter FindById 7000
+[2016-01-04 00:13:33.291] [TRACE] request - end /patient/status/:id
+[2016-01-04 00:13:33.291] [TRACE] request - |exit FindById 7000
+[2016-01-04 00:13:59.919] [TRACE] request - begin /patient/status/:id
+[2016-01-04 00:13:59.919] [TRACE] request - |enter Guard 
+[2016-01-04 00:13:59.920] [TRACE] request - |enter Authenticate 7000
+[2016-01-04 00:13:59.920] [TRACE] request - |exit Authenticate 7000
+[2016-01-04 00:13:59.920] [TRACE] request - |exit Guard 
+[2016-01-04 00:13:59.922] [TRACE] request - |enter FindById 7000
+[2016-01-04 00:13:59.923] [TRACE] request - end /patient/status/:id
+[2016-01-04 00:13:59.923] [TRACE] request - |exit FindById 7000
+[2016-01-04 00:13:59.931] [TRACE] request - begin /patient/status/:id
+[2016-01-04 00:13:59.931] [TRACE] request - |enter Guard 
+[2016-01-04 00:13:59.931] [TRACE] request - |enter Authenticate 8000
+[2016-01-04 00:13:59.931] [TRACE] request - |enter If 8000
+[2016-01-04 00:13:59.932] [TRACE] request - |exit If 8000
+[2016-01-04 00:13:59.932] [TRACE] request - |exit Authenticate 8000
+[2016-01-04 00:13:59.932] [TRACE] request - |exit Guard 
+[2016-01-04 00:13:59.933] [TRACE] request - |enter FindById 8000
+[2016-01-04 00:13:59.933] [TRACE] request - |exit FindById 8000
+[2016-01-04 00:13:59.934] [TRACE] request - |enter Save 8000
+[2016-01-04 00:13:59.935] [TRACE] request - end /patient/status/:id
+[2016-01-04 00:13:59.935] [TRACE] request - |exit Save 8000
+[2016-01-04 00:14:00.018] [TRACE] request - begin /patient/query/:query
+[2016-01-04 00:14:00.018] [TRACE] request - |enter Guard 
+[2016-01-04 00:14:00.018] [TRACE] request - |enter Authenticate 5000
+[2016-01-04 00:14:00.019] [TRACE] request - |exit Authenticate 5000
+[2016-01-04 00:14:00.019] [TRACE] request - |exit Guard 
+[2016-01-04 00:14:00.021] [TRACE] request - |enter Find 5000
+[2016-01-04 00:14:00.023] [TRACE] request - end /patient/query/:query
+[2016-01-04 00:14:00.023] [TRACE] request - |exit Find 5000
+[2016-01-04 00:14:00.026] [TRACE] request - begin /patient/query/:query
+[2016-01-04 00:14:00.026] [TRACE] request - |enter Guard 
+[2016-01-04 00:14:00.026] [TRACE] request - |enter Authenticate 5000
+[2016-01-04 00:14:00.026] [TRACE] request - |exit Authenticate 5000
+[2016-01-04 00:14:00.026] [TRACE] request - |exit Guard 
+[2016-01-04 00:14:00.028] [TRACE] request - |enter Find 5000
+[2016-01-04 00:14:00.030] [TRACE] request - end /patient/query/:query
+[2016-01-04 00:14:00.030] [TRACE] request - |exit Find 5000
+[2016-01-04 00:14:00.046] [TRACE] request - begin /patient/query/:query
+[2016-01-04 00:14:00.046] [TRACE] request - |enter Guard 
+[2016-01-04 00:14:00.046] [TRACE] request - |enter Authenticate 5000
+[2016-01-04 00:14:00.046] [TRACE] request - |exit Authenticate 5000
+[2016-01-04 00:14:00.046] [TRACE] request - |exit Guard 
+[2016-01-04 00:14:00.048] [TRACE] request - |enter Find 5000
+[2016-01-04 00:14:00.049] [TRACE] request - end /patient/query/:query
+[2016-01-04 00:14:00.049] [TRACE] request - |exit Find 5000
+[2016-01-04 00:14:05.842] [TRACE] request - begin /account/query/:query
+[2016-01-04 00:14:05.842] [TRACE] request - |enter Guard 
+[2016-01-04 00:14:05.843] [TRACE] request - |exit Guard 
+[2016-01-04 00:14:05.845] [TRACE] request - |enter Find 14000
+[2016-01-04 00:14:05.846] [TRACE] request - end /account/query/:query
+[2016-01-04 00:14:05.846] [TRACE] request - |exit Find 14000
+[2016-01-04 00:14:07.586] [TRACE] request - begin /patient/query/:query
+[2016-01-04 00:14:07.586] [TRACE] request - |enter Guard 
+[2016-01-04 00:14:07.586] [TRACE] request - |enter Authenticate 5000
+[2016-01-04 00:14:07.587] [TRACE] request - |exit Authenticate 5000
+[2016-01-04 00:14:07.587] [TRACE] request - |exit Guard 
+[2016-01-04 00:14:07.589] [TRACE] request - |enter Find 5000
+[2016-01-04 00:14:07.591] [TRACE] request - end /patient/query/:query
+[2016-01-04 00:14:07.591] [TRACE] request - |exit Find 5000
+[2016-01-04 00:20:18.047] [TRACE] request - begin /view/:id
+[2016-01-04 00:20:18.047] [TRACE] request - |enter Guard 
+[2016-01-04 00:20:18.047] [TRACE] request - |enter Authenticate 23000
+[2016-01-04 00:20:18.047] [TRACE] request - |exit Authenticate 23000
+[2016-01-04 00:20:18.047] [TRACE] request - |exit Guard 
+[2016-01-04 00:20:18.050] [TRACE] request - |enter Find 23000
+[2016-01-04 00:20:18.053] [TRACE] request - end /view/:id
+[2016-01-04 00:20:18.053] [TRACE] request - |exit Find 23000
+[2016-01-04 00:20:18.076] [TRACE] request - begin /patient/query/:query
+[2016-01-04 00:20:18.076] [TRACE] request - |enter Guard 
+[2016-01-04 00:20:18.077] [TRACE] request - |enter Authenticate 5000
+[2016-01-04 00:20:18.077] [TRACE] request - |exit Authenticate 5000
+[2016-01-04 00:20:18.077] [TRACE] request - |exit Guard 
+[2016-01-04 00:20:18.080] [TRACE] request - |enter Find 5000
+[2016-01-04 00:20:18.081] [TRACE] request - end /patient/query/:query
+[2016-01-04 00:20:18.082] [TRACE] request - |exit Find 5000
+[2016-01-04 00:20:25.743] [TRACE] request - begin /patient/query/:query
+[2016-01-04 00:20:25.743] [TRACE] request - |enter Guard 
+[2016-01-04 00:20:25.743] [TRACE] request - |enter Authenticate 5000
+[2016-01-04 00:20:25.743] [TRACE] request - |exit Authenticate 5000
+[2016-01-04 00:20:25.744] [TRACE] request - |exit Guard 
+[2016-01-04 00:20:25.745] [TRACE] request - |enter Find 5000
+[2016-01-04 00:20:25.747] [TRACE] request - end /patient/query/:query
+[2016-01-04 00:20:25.747] [TRACE] request - |exit Find 5000
+[2016-01-04 00:21:27.677] [TRACE] request - begin /patient/query/:query
+[2016-01-04 00:21:27.678] [TRACE] request - |enter Guard 
+[2016-01-04 00:21:27.678] [TRACE] request - |enter Authenticate 5000
+[2016-01-04 00:21:27.678] [TRACE] request - |exit Authenticate 5000
+[2016-01-04 00:21:27.678] [TRACE] request - |exit Guard 
+[2016-01-04 00:21:27.680] [TRACE] request - |enter Find 5000
+[2016-01-04 00:21:27.681] [TRACE] request - end /patient/query/:query
+[2016-01-04 00:21:27.681] [TRACE] request - |exit Find 5000
+[2016-01-04 00:23:15.924] [TRACE] request - begin /view/:id
+[2016-01-04 00:23:15.924] [TRACE] request - |enter Guard 
+[2016-01-04 00:23:15.924] [TRACE] request - |enter Authenticate 23000
+[2016-01-04 00:23:15.925] [TRACE] request - |exit Authenticate 23000
+[2016-01-04 00:23:15.925] [TRACE] request - |exit Guard 
+[2016-01-04 00:23:15.928] [TRACE] request - |enter Find 23000
+[2016-01-04 00:23:15.931] [TRACE] request - end /view/:id
+[2016-01-04 00:23:15.931] [TRACE] request - |exit Find 23000
+[2016-01-04 00:23:15.953] [TRACE] request - begin /patient/query/:query
+[2016-01-04 00:23:15.953] [TRACE] request - |enter Guard 
+[2016-01-04 00:23:15.953] [TRACE] request - |enter Authenticate 5000
+[2016-01-04 00:23:15.953] [TRACE] request - |exit Authenticate 5000
+[2016-01-04 00:23:15.953] [TRACE] request - |exit Guard 
+[2016-01-04 00:23:15.956] [TRACE] request - |enter Find 5000
+[2016-01-04 00:23:15.957] [TRACE] request - end /patient/query/:query
+[2016-01-04 00:23:15.957] [TRACE] request - |exit Find 5000
+[2016-01-04 00:28:56.043] [TRACE] request - begin /view/:id
+[2016-01-04 00:28:56.043] [TRACE] request - |enter Guard 
+[2016-01-04 00:28:56.043] [TRACE] request - |enter Authenticate 23000
+[2016-01-04 00:28:56.044] [TRACE] request - |exit Authenticate 23000
+[2016-01-04 00:28:56.044] [TRACE] request - |exit Guard 
+[2016-01-04 00:28:56.047] [TRACE] request - |enter Find 23000
+[2016-01-04 00:28:56.050] [TRACE] request - end /view/:id
+[2016-01-04 00:28:56.050] [TRACE] request - |exit Find 23000
+[2016-01-04 00:28:56.098] [TRACE] request - begin /patient/query/:query
+[2016-01-04 00:28:56.099] [TRACE] request - |enter Guard 
+[2016-01-04 00:28:56.099] [TRACE] request - |enter Authenticate 5000
+[2016-01-04 00:28:56.100] [TRACE] request - |exit Authenticate 5000
+[2016-01-04 00:28:56.100] [TRACE] request - |exit Guard 
+[2016-01-04 00:28:56.103] [TRACE] request - |enter Find 5000
+[2016-01-04 00:28:56.104] [TRACE] request - end /patient/query/:query
+[2016-01-04 00:28:56.104] [TRACE] request - |exit Find 5000
+[2016-01-04 00:28:58.419] [TRACE] request - begin /patient/:id
+[2016-01-04 00:28:58.419] [TRACE] request - |enter Guard 
+[2016-01-04 00:28:58.419] [TRACE] request - |enter Authenticate 2000
+[2016-01-04 00:28:58.419] [TRACE] request - |exit Authenticate 2000
+[2016-01-04 00:28:58.419] [TRACE] request - |exit Guard 
+[2016-01-04 00:28:58.421] [TRACE] request - |enter FindById 2000
+[2016-01-04 00:28:58.423] [TRACE] request - end /patient/:id
+[2016-01-04 00:28:58.423] [TRACE] request - |exit FindById 2000
+[2016-01-04 11:56:27.023] [TRACE] request - begin /patient/query/:query
+[2016-01-04 11:56:27.023] [TRACE] request - |enter Guard 
+[2016-01-04 11:56:27.023] [TRACE] request - |enter Authenticate 5000
+[2016-01-04 11:56:27.023] [TRACE] request - |exit Authenticate 5000
+[2016-01-04 11:56:27.023] [TRACE] request - |exit Guard 
+[2016-01-04 11:56:27.025] [TRACE] request - |enter Find 5000
+[2016-01-04 11:56:27.027] [TRACE] request - end /patient/query/:query
+[2016-01-04 11:56:27.027] [TRACE] request - |exit Find 5000
+[2016-01-04 11:56:36.623] [TRACE] request - begin /account/query/:query
+[2016-01-04 11:56:36.623] [TRACE] request - |enter Guard 
+[2016-01-04 11:56:36.623] [TRACE] request - |exit Guard 
+[2016-01-04 11:56:36.625] [TRACE] request - |enter Find 14000
+[2016-01-04 11:56:36.626] [TRACE] request - end /account/query/:query
+[2016-01-04 11:56:36.626] [TRACE] request - |exit Find 14000
+[2016-01-04 11:56:41.054] [TRACE] request - begin /account/:id
+[2016-01-04 11:56:41.055] [TRACE] request - |enter Guard 
+[2016-01-04 11:56:41.055] [TRACE] request - |enter Authenticate 11000
+[2016-01-04 11:56:41.055] [TRACE] request - |exit Authenticate 11000
+[2016-01-04 11:56:41.055] [TRACE] request - |exit Guard 
+[2016-01-04 11:56:41.057] [TRACE] request - |enter FindById 11000
+[2016-01-04 11:56:41.058] [TRACE] request - end /account/:id
+[2016-01-04 11:56:41.058] [TRACE] request - |exit FindById 11000
+[2016-01-04 11:56:54.925] [TRACE] request - begin /account/:id
+[2016-01-04 11:56:54.925] [TRACE] request - |enter Guard 
+[2016-01-04 11:56:54.925] [TRACE] request - |enter Authenticate 11000
+[2016-01-04 11:56:54.925] [TRACE] request - |exit Authenticate 11000
+[2016-01-04 11:56:54.925] [TRACE] request - |exit Guard 
+[2016-01-04 11:56:54.927] [TRACE] request - |enter FindById 11000
+[2016-01-04 11:56:54.927] [TRACE] request - end /account/:id
+[2016-01-04 11:56:54.927] [TRACE] request - |exit FindById 11000
+[2016-01-04 11:57:09.305] [TRACE] request - begin /account/:id
+[2016-01-04 11:57:09.305] [TRACE] request - |enter Guard 
+[2016-01-04 11:57:09.305] [TRACE] request - |enter Authenticate 11000
+[2016-01-04 11:57:09.305] [TRACE] request - |exit Authenticate 11000
+[2016-01-04 11:57:09.305] [TRACE] request - |exit Guard 
+[2016-01-04 11:57:09.307] [TRACE] request - |enter FindById 11000
+[2016-01-04 11:57:09.307] [TRACE] request - end /account/:id
+[2016-01-04 11:57:09.308] [TRACE] request - |exit FindById 11000
+[2016-01-04 11:57:17.030] [TRACE] request - begin /account/:id
+[2016-01-04 11:57:17.030] [TRACE] request - |enter Guard 
+[2016-01-04 11:57:17.030] [TRACE] request - |enter Authenticate 11000
+[2016-01-04 11:57:17.030] [TRACE] request - |exit Authenticate 11000
+[2016-01-04 11:57:17.030] [TRACE] request - |exit Guard 
+[2016-01-04 11:57:17.031] [TRACE] request - |enter FindById 11000
+[2016-01-04 11:57:17.032] [TRACE] request - end /account/:id
+[2016-01-04 11:57:17.032] [TRACE] request - |exit FindById 11000
+[2016-01-04 11:57:24.457] [TRACE] request - begin /account/logout
+[2016-01-04 11:57:24.457] [TRACE] request - |enter Guard 
+[2016-01-04 11:57:24.459] [TRACE] request - end /account/logout
+[2016-01-04 11:57:24.459] [TRACE] request - |exit Guard 
+[2016-01-04 11:57:25.611] [TRACE] request - begin /account/query/:query
+[2016-01-04 11:57:25.611] [TRACE] request - |enter Guard 
+[2016-01-04 11:57:25.612] [TRACE] request - |exit Guard 
+[2016-01-04 11:57:25.613] [TRACE] request - |enter Find 14000
+[2016-01-04 11:57:25.620] [TRACE] request - end /account/query/:query
+[2016-01-04 11:57:25.620] [TRACE] request - |exit Find 14000
+[2016-01-04 11:57:27.182] [TRACE] request - begin /account/query/:query
+[2016-01-04 11:57:27.182] [TRACE] request - |enter Guard 
+[2016-01-04 11:57:27.183] [TRACE] request - |exit Guard 
+[2016-01-04 11:57:27.184] [TRACE] request - |enter Find 14000
+[2016-01-04 11:57:27.186] [TRACE] request - end /account/query/:query
+[2016-01-04 11:57:27.186] [TRACE] request - |exit Find 14000
+[2016-01-04 11:57:27.981] [TRACE] request - begin /account/query/:query
+[2016-01-04 11:57:27.981] [TRACE] request - |enter Guard 
+[2016-01-04 11:57:27.981] [TRACE] request - |exit Guard 
+[2016-01-04 11:57:27.983] [TRACE] request - |enter Find 14000
+[2016-01-04 11:57:27.983] [TRACE] request - end /account/query/:query
+[2016-01-04 11:57:27.984] [TRACE] request - |exit Find 14000
+[2016-01-04 11:57:28.148] [TRACE] request - begin /account/query/:query
+[2016-01-04 11:57:28.149] [TRACE] request - |enter Guard 
+[2016-01-04 11:57:28.149] [TRACE] request - |exit Guard 
+[2016-01-04 11:57:28.150] [TRACE] request - |enter Find 14000
+[2016-01-04 11:57:28.151] [TRACE] request - end /account/query/:query
+[2016-01-04 11:57:28.152] [TRACE] request - |exit Find 14000
+[2016-01-04 11:57:28.306] [TRACE] request - begin /account/query/:query
+[2016-01-04 11:57:28.306] [TRACE] request - |enter Guard 
+[2016-01-04 11:57:28.307] [TRACE] request - |exit Guard 
+[2016-01-04 11:57:28.308] [TRACE] request - |enter Find 14000
+[2016-01-04 11:57:28.309] [TRACE] request - end /account/query/:query
+[2016-01-04 11:57:28.309] [TRACE] request - |exit Find 14000
+[2016-01-04 11:57:29.334] [TRACE] request - begin /account/query/:query
+[2016-01-04 11:57:29.334] [TRACE] request - |enter Guard 
+[2016-01-04 11:57:29.334] [TRACE] request - |exit Guard 
+[2016-01-04 11:57:29.335] [TRACE] request - |enter Find 14000
+[2016-01-04 11:57:29.337] [TRACE] request - end /account/query/:query
+[2016-01-04 11:57:29.337] [TRACE] request - |exit Find 14000
+[2016-01-04 11:57:29.469] [TRACE] request - begin /account/query/:query
+[2016-01-04 11:57:29.470] [TRACE] request - |enter Guard 
+[2016-01-04 11:57:29.470] [TRACE] request - |exit Guard 
+[2016-01-04 11:57:29.471] [TRACE] request - |enter Find 14000
+[2016-01-04 11:57:29.472] [TRACE] request - end /account/query/:query
+[2016-01-04 11:57:29.472] [TRACE] request - |exit Find 14000
+[2016-01-04 11:57:35.482] [INFO] request -  10002
+[2016-01-04 11:57:44.463] [TRACE] request - begin /account/login
+[2016-01-04 11:57:44.465] [TRACE] request - end /account/login
+[2016-01-04 11:57:46.860] [TRACE] request - begin /account/logout
+[2016-01-04 11:57:46.860] [TRACE] request - |enter Guard 
+[2016-01-04 11:57:46.861] [TRACE] request - end /account/logout
+[2016-01-04 11:57:46.861] [TRACE] request - |exit Guard 
+[2016-01-04 11:57:51.218] [TRACE] request - begin /account/query/:query
+[2016-01-04 11:57:51.218] [TRACE] request - |enter Guard 
+[2016-01-04 11:57:51.218] [TRACE] request - |exit Guard 
+[2016-01-04 11:57:51.219] [TRACE] request - |enter Find 14000
+[2016-01-04 11:57:51.220] [TRACE] request - end /account/query/:query
+[2016-01-04 11:57:51.220] [TRACE] request - |exit Find 14000
+[2016-01-04 11:57:52.520] [TRACE] request - begin /account/query/:query
+[2016-01-04 11:57:52.520] [TRACE] request - |enter Guard 
+[2016-01-04 11:57:52.520] [TRACE] request - |exit Guard 
+[2016-01-04 11:57:52.521] [TRACE] request - |enter Find 14000
+[2016-01-04 11:57:52.522] [TRACE] request - end /account/query/:query
+[2016-01-04 11:57:52.522] [TRACE] request - |exit Find 14000
+[2016-01-04 11:57:56.434] [TRACE] request - begin /account/query/:query
+[2016-01-04 11:57:56.434] [TRACE] request - |enter Guard 
+[2016-01-04 11:57:56.434] [TRACE] request - |exit Guard 
+[2016-01-04 11:57:56.435] [TRACE] request - |enter Find 14000
+[2016-01-04 11:57:56.436] [TRACE] request - end /account/query/:query
+[2016-01-04 11:57:56.436] [TRACE] request - |exit Find 14000
+[2016-01-04 11:57:56.594] [TRACE] request - begin /account/query/:query
+[2016-01-04 11:57:56.594] [TRACE] request - |enter Guard 
+[2016-01-04 11:57:56.595] [TRACE] request - |exit Guard 
+[2016-01-04 11:57:56.596] [TRACE] request - |enter Find 14000
+[2016-01-04 11:57:56.597] [TRACE] request - end /account/query/:query
+[2016-01-04 11:57:56.597] [TRACE] request - |exit Find 14000
+[2016-01-04 11:57:57.682] [TRACE] request - begin /account/query/:query
+[2016-01-04 11:57:57.682] [TRACE] request - |enter Guard 
+[2016-01-04 11:57:57.682] [TRACE] request - |exit Guard 
+[2016-01-04 11:57:57.683] [TRACE] request - |enter Find 14000
+[2016-01-04 11:57:57.684] [TRACE] request - end /account/query/:query
+[2016-01-04 11:57:57.684] [TRACE] request - |exit Find 14000
+[2016-01-04 11:57:57.983] [TRACE] request - begin /account/query/:query
+[2016-01-04 11:57:57.983] [TRACE] request - |enter Guard 
+[2016-01-04 11:57:57.983] [TRACE] request - |exit Guard 
+[2016-01-04 11:57:57.984] [TRACE] request - |enter Find 14000
+[2016-01-04 11:57:57.985] [TRACE] request - end /account/query/:query
+[2016-01-04 11:57:57.985] [TRACE] request - |exit Find 14000
+[2016-01-04 11:57:58.301] [TRACE] request - begin /account/query/:query
+[2016-01-04 11:57:58.301] [TRACE] request - |enter Guard 
+[2016-01-04 11:57:58.302] [TRACE] request - |exit Guard 
+[2016-01-04 11:57:58.302] [TRACE] request - |enter Find 14000
+[2016-01-04 11:57:58.303] [TRACE] request - end /account/query/:query
+[2016-01-04 11:57:58.303] [TRACE] request - |exit Find 14000
+[2016-01-04 11:57:58.691] [TRACE] request - begin /account/query/:query
+[2016-01-04 11:57:58.692] [TRACE] request - |enter Guard 
+[2016-01-04 11:57:58.692] [TRACE] request - |exit Guard 
+[2016-01-04 11:57:58.693] [TRACE] request - |enter Find 14000
+[2016-01-04 11:57:58.694] [TRACE] request - end /account/query/:query
+[2016-01-04 11:57:58.694] [TRACE] request - |exit Find 14000
+[2016-01-04 11:58:03.886] [INFO] request -  10002
+[2016-01-04 11:58:08.973] [TRACE] request - begin /account/query/:query
+[2016-01-04 11:58:08.973] [TRACE] request - |enter Guard 
+[2016-01-04 11:58:08.973] [TRACE] request - |exit Guard 
+[2016-01-04 11:58:08.974] [TRACE] request - |enter Find 14000
+[2016-01-04 11:58:08.975] [TRACE] request - end /account/query/:query
+[2016-01-04 11:58:08.975] [TRACE] request - |exit Find 14000
+[2016-01-04 11:58:09.860] [TRACE] request - begin /account/query/:query
+[2016-01-04 11:58:09.861] [TRACE] request - |enter Guard 
+[2016-01-04 11:58:09.861] [TRACE] request - |exit Guard 
+[2016-01-04 11:58:09.862] [TRACE] request - |enter Find 14000
+[2016-01-04 11:58:09.863] [TRACE] request - end /account/query/:query
+[2016-01-04 11:58:09.863] [TRACE] request - |exit Find 14000
+[2016-01-04 11:58:10.894] [TRACE] request - begin /account/query/:query
+[2016-01-04 11:58:10.894] [TRACE] request - |enter Guard 
+[2016-01-04 11:58:10.894] [TRACE] request - |exit Guard 
+[2016-01-04 11:58:10.896] [TRACE] request - |enter Find 14000
+[2016-01-04 11:58:10.897] [TRACE] request - end /account/query/:query
+[2016-01-04 11:58:10.897] [TRACE] request - |exit Find 14000
+[2016-01-04 11:58:11.180] [TRACE] request - begin /account/query/:query
+[2016-01-04 11:58:11.180] [TRACE] request - |enter Guard 
+[2016-01-04 11:58:11.180] [TRACE] request - |exit Guard 
+[2016-01-04 11:58:11.181] [TRACE] request - |enter Find 14000
+[2016-01-04 11:58:11.182] [TRACE] request - end /account/query/:query
+[2016-01-04 11:58:11.182] [TRACE] request - |exit Find 14000
+[2016-01-04 11:58:11.323] [TRACE] request - begin /account/query/:query
+[2016-01-04 11:58:11.324] [TRACE] request - |enter Guard 
+[2016-01-04 11:58:11.324] [TRACE] request - |exit Guard 
+[2016-01-04 11:58:11.325] [TRACE] request - |enter Find 14000
+[2016-01-04 11:58:11.326] [TRACE] request - end /account/query/:query
+[2016-01-04 11:58:11.326] [TRACE] request - |exit Find 14000
+[2016-01-04 11:58:11.451] [TRACE] request - begin /account/query/:query
+[2016-01-04 11:58:11.452] [TRACE] request - |enter Guard 
+[2016-01-04 11:58:11.452] [TRACE] request - |exit Guard 
+[2016-01-04 11:58:11.453] [TRACE] request - |enter Find 14000
+[2016-01-04 11:58:11.454] [TRACE] request - end /account/query/:query
+[2016-01-04 11:58:11.454] [TRACE] request - |exit Find 14000
+[2016-01-04 11:58:15.879] [TRACE] request - begin /account/login
+[2016-01-04 11:58:15.881] [TRACE] request - end /account/login
+[2016-01-04 11:58:18.355] [TRACE] request - begin /patient/query/:query
+[2016-01-04 11:58:18.355] [TRACE] request - |enter Guard 
+[2016-01-04 11:58:18.356] [TRACE] request - |enter Authenticate 5000
+[2016-01-04 11:58:18.356] [TRACE] request - |exit Authenticate 5000
+[2016-01-04 11:58:18.356] [TRACE] request - |exit Guard 
+[2016-01-04 11:58:18.358] [TRACE] request - |enter Find 5000
+[2016-01-04 11:58:18.360] [TRACE] request - end /patient/query/:query
+[2016-01-04 11:58:18.360] [TRACE] request - |exit Find 5000
+[2016-01-04 11:58:19.862] [TRACE] request - begin /account/query/:query
+[2016-01-04 11:58:19.862] [TRACE] request - |enter Guard 
+[2016-01-04 11:58:19.862] [TRACE] request - |exit Guard 
+[2016-01-04 11:58:19.864] [TRACE] request - |enter Find 14000
+[2016-01-04 11:58:19.865] [TRACE] request - end /account/query/:query
+[2016-01-04 11:58:19.865] [TRACE] request - |exit Find 14000
+[2016-01-04 11:58:23.158] [TRACE] request - begin /account/logout
+[2016-01-04 11:58:23.159] [TRACE] request - |enter Guard 
+[2016-01-04 11:58:23.159] [TRACE] request - end /account/logout
+[2016-01-04 11:58:23.159] [TRACE] request - |exit Guard 
+[2016-01-04 11:58:25.190] [TRACE] request - begin /account/query/:query
+[2016-01-04 11:58:25.190] [TRACE] request - |enter Guard 
+[2016-01-04 11:58:25.190] [TRACE] request - |exit Guard 
+[2016-01-04 11:58:25.191] [TRACE] request - |enter Find 14000
+[2016-01-04 11:58:25.192] [TRACE] request - end /account/query/:query
+[2016-01-04 11:58:25.192] [TRACE] request - |exit Find 14000
+[2016-01-04 11:58:26.932] [TRACE] request - begin /account/query/:query
+[2016-01-04 11:58:26.932] [TRACE] request - |enter Guard 
+[2016-01-04 11:58:26.932] [TRACE] request - |exit Guard 
+[2016-01-04 11:58:26.933] [TRACE] request - |enter Find 14000
+[2016-01-04 11:58:26.934] [TRACE] request - end /account/query/:query
+[2016-01-04 11:58:26.934] [TRACE] request - |exit Find 14000
+[2016-01-04 11:58:29.485] [TRACE] request - begin /account/query/:query
+[2016-01-04 11:58:29.485] [TRACE] request - |enter Guard 
+[2016-01-04 11:58:29.485] [TRACE] request - |exit Guard 
+[2016-01-04 11:58:29.486] [TRACE] request - |enter Find 14000
+[2016-01-04 11:58:29.488] [TRACE] request - end /account/query/:query
+[2016-01-04 11:58:29.488] [TRACE] request - |exit Find 14000
+[2016-01-04 11:58:30.058] [TRACE] request - begin /account/query/:query
+[2016-01-04 11:58:30.058] [TRACE] request - |enter Guard 
+[2016-01-04 11:58:30.058] [TRACE] request - |exit Guard 
+[2016-01-04 11:58:30.059] [TRACE] request - |enter Find 14000
+[2016-01-04 11:58:30.060] [TRACE] request - end /account/query/:query
+[2016-01-04 11:58:30.061] [TRACE] request - |exit Find 14000
+[2016-01-04 11:58:39.193] [TRACE] request - begin /account/login
+[2016-01-04 11:58:39.194] [TRACE] request - end /account/login
+[2016-01-04 11:58:46.385] [TRACE] request - begin /patient/query/:query
+[2016-01-04 11:58:46.385] [TRACE] request - |enter Guard 
+[2016-01-04 11:58:46.385] [TRACE] request - |enter Authenticate 5000
+[2016-01-04 11:58:46.386] [TRACE] request - |exit Authenticate 5000
+[2016-01-04 11:58:46.386] [TRACE] request - |exit Guard 
+[2016-01-04 11:58:46.388] [TRACE] request - |enter Find 5000
+[2016-01-04 11:58:46.389] [TRACE] request - end /patient/query/:query
+[2016-01-04 11:58:46.389] [TRACE] request - |exit Find 5000
+[2016-01-04 11:59:23.088] [TRACE] request - begin /patient/query/:query
+[2016-01-04 11:59:23.088] [TRACE] request - |enter Guard 
+[2016-01-04 11:59:23.088] [TRACE] request - |enter Authenticate 5000
+[2016-01-04 11:59:23.088] [TRACE] request - |exit Authenticate 5000
+[2016-01-04 11:59:23.088] [TRACE] request - |exit Guard 
+[2016-01-04 11:59:23.092] [TRACE] request - |enter Find 5000
+[2016-01-04 11:59:23.093] [TRACE] request - end /patient/query/:query
+[2016-01-04 11:59:23.094] [TRACE] request - |exit Find 5000
+[2016-01-04 11:59:23.095] [TRACE] request - begin /patient/query/:query
+[2016-01-04 11:59:23.095] [TRACE] request - |enter Guard 
+[2016-01-04 11:59:23.095] [TRACE] request - |enter Authenticate 5000
+[2016-01-04 11:59:23.095] [FATAL] request - Unexpected token o 100000
+[2016-01-04 11:59:23.106] [TRACE] request - begin /patient/query/:query
+[2016-01-04 11:59:23.106] [TRACE] request - |enter Guard 
+[2016-01-04 11:59:23.107] [TRACE] request - |enter Authenticate 5000
+[2016-01-04 11:59:23.107] [TRACE] request - |exit Authenticate 5000
+[2016-01-04 11:59:23.107] [TRACE] request - |exit Guard 
+[2016-01-04 11:59:23.113] [TRACE] request - begin /patient/query/:query
+[2016-01-04 11:59:23.113] [TRACE] request - |enter Guard 
+[2016-01-04 11:59:23.114] [TRACE] request - |enter Authenticate 5000
+[2016-01-04 11:59:23.114] [FATAL] request - Unexpected token o 100000
+[2016-01-04 11:59:23.116] [TRACE] request - |enter Find 5000
+[2016-01-04 11:59:23.117] [TRACE] request - end /patient/query/:query
+[2016-01-04 11:59:23.118] [TRACE] request - |exit Find 5000
+[2016-01-04 11:59:23.825] [TRACE] request - begin /patient/query/:query
+[2016-01-04 11:59:23.825] [TRACE] request - |enter Guard 
+[2016-01-04 11:59:23.825] [TRACE] request - |enter Authenticate 5000
+[2016-01-04 11:59:23.825] [TRACE] request - |exit Authenticate 5000
+[2016-01-04 11:59:23.825] [TRACE] request - |exit Guard 
+[2016-01-04 11:59:23.827] [TRACE] request - begin /patient/query/:query
+[2016-01-04 11:59:23.827] [TRACE] request - |enter Guard 
+[2016-01-04 11:59:23.827] [TRACE] request - |enter Authenticate 5000
+[2016-01-04 11:59:23.827] [FATAL] request - Unexpected token o 100000
+[2016-01-04 11:59:23.831] [TRACE] request - |enter Find 5000
+[2016-01-04 11:59:23.834] [TRACE] request - end /patient/query/:query
+[2016-01-04 11:59:23.834] [TRACE] request - |exit Find 5000
+[2016-01-04 11:59:23.839] [TRACE] request - begin /patient/query/:query
+[2016-01-04 11:59:23.839] [TRACE] request - |enter Guard 
+[2016-01-04 11:59:23.839] [TRACE] request - |enter Authenticate 5000
+[2016-01-04 11:59:23.839] [TRACE] request - |exit Authenticate 5000
+[2016-01-04 11:59:23.839] [TRACE] request - |exit Guard 
+[2016-01-04 11:59:23.840] [TRACE] request - begin /patient/query/:query
+[2016-01-04 11:59:23.840] [TRACE] request - |enter Guard 
+[2016-01-04 11:59:23.840] [TRACE] request - |enter Authenticate 5000
+[2016-01-04 11:59:23.840] [FATAL] request - Unexpected token o 100000
+[2016-01-04 11:59:23.845] [TRACE] request - |enter Find 5000
+[2016-01-04 11:59:23.849] [TRACE] request - end /patient/query/:query
+[2016-01-04 11:59:23.849] [TRACE] request - |exit Find 5000
+[2016-01-04 11:59:25.576] [TRACE] request - begin /patient/query/:query
+[2016-01-04 11:59:25.576] [TRACE] request - |enter Guard 
+[2016-01-04 11:59:25.576] [TRACE] request - |enter Authenticate 5000
+[2016-01-04 11:59:25.576] [TRACE] request - |exit Authenticate 5000
+[2016-01-04 11:59:25.576] [TRACE] request - |exit Guard 
+[2016-01-04 11:59:25.577] [TRACE] request - begin /patient/query/:query
+[2016-01-04 11:59:25.577] [TRACE] request - |enter Guard 
+[2016-01-04 11:59:25.577] [TRACE] request - |enter Authenticate 5000
+[2016-01-04 11:59:25.577] [FATAL] request - Unexpected token o 100000
+[2016-01-04 11:59:25.579] [TRACE] request - |enter Find 5000
+[2016-01-04 11:59:25.580] [TRACE] request - end /patient/query/:query
+[2016-01-04 11:59:25.580] [TRACE] request - |exit Find 5000
+[2016-01-04 11:59:25.585] [TRACE] request - begin /patient/query/:query
+[2016-01-04 11:59:25.585] [TRACE] request - |enter Guard 
+[2016-01-04 11:59:25.585] [TRACE] request - |enter Authenticate 5000
+[2016-01-04 11:59:25.585] [FATAL] request - Unexpected token o 100000
+[2016-01-04 11:59:25.586] [TRACE] request - begin /patient/query/:query
+[2016-01-04 11:59:25.586] [TRACE] request - |enter Guard 
+[2016-01-04 11:59:25.586] [TRACE] request - |enter Authenticate 5000
+[2016-01-04 11:59:25.587] [TRACE] request - |exit Authenticate 5000
+[2016-01-04 11:59:25.587] [TRACE] request - |exit Guard 
+[2016-01-04 11:59:25.589] [TRACE] request - |enter Find 5000
+[2016-01-04 11:59:25.592] [TRACE] request - end /patient/query/:query
+[2016-01-04 11:59:25.592] [TRACE] request - |exit Find 5000
+[2016-01-04 12:18:33.916] [INFO] request - SIGINT. Ok.

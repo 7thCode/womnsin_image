@@ -26,7 +26,9 @@ var FileController = (function () {
     FileController.prototype.get_file_name = function (request, response, next) {
         try {
             logger.trace("begin /file/:name");
-            var conn = mongoose.createConnection("mongodb://" + config.dbaddress + "/" + config.db);
+            //  var conn = mongoose.createConnection("mongodb://" + config.dbaddress + "/" + config.db);
+            var connection = "mongodb://" + config.dbuser + ":" + config.dbpassword + "@" + config.dbaddress + "/" + config.dbname;
+            var conn = mongoose.createConnection(connection);
             conn.once('open', function (error) {
                 if (!error) {
                     var gfs = Grid(conn.db, mongoose.mongo); //missing parameter
@@ -108,7 +110,9 @@ var FileController = (function () {
         wrapper.Guard(request, response, function (request, response) {
             var number = 24000;
             wrapper.Authenticate(request, response, number, function (user, response) {
-                var conn = mongoose.createConnection("mongodb://" + config.dbaddress + "/" + config.db);
+                //        var conn = mongoose.createConnection("mongodb://" + config.dbaddress + "/" + config.db);
+                var connection = "mongodb://" + config.dbuser + ":" + config.dbpassword + "@" + config.dbaddress + "/" + config.dbname;
+                var conn = mongoose.createConnection(connection);
                 if (conn) {
                     conn.once('open', function (error) {
                         if (!error) {
@@ -196,7 +200,9 @@ var FileController = (function () {
         wrapper.Guard(request, response, function (request, response) {
             var number = 25000;
             wrapper.Authenticate(request, response, number, function (user, response) {
-                var conn = mongoose.createConnection("mongodb://" + config.dbaddress + "/" + config.db);
+                //      var conn = mongoose.createConnection("mongodb://" + config.dbaddress + "/" + config.db);
+                var connection = "mongodb://" + config.dbuser + ":" + config.dbpassword + "@" + config.dbaddress + "/" + config.dbname;
+                var conn = mongoose.createConnection(connection);
                 if (conn) {
                     conn.once('open', function (error) {
                         if (!error) {
@@ -285,7 +291,9 @@ var FileController = (function () {
         wrapper.Guard(request, response, function (request, response) {
             var number = 26000;
             wrapper.Authenticate(request, response, number, function (user, response) {
-                var conn = mongoose.createConnection("mongodb://" + config.dbaddress + "/" + config.db);
+                //    var conn = mongoose.createConnection("mongodb://" + config.dbaddress + "/" + config.db);
+                var connection = "mongodb://" + config.dbuser + ":" + config.dbpassword + "@" + config.dbaddress + "/" + config.dbname;
+                var conn = mongoose.createConnection(connection);
                 if (conn) {
                     conn.once('open', function (error) {
                         if (!error) {

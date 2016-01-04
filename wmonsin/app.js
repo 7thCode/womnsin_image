@@ -24,15 +24,14 @@ var log4js = require('log4js');
 log4js.configure("config/logs.json");
 var logger = log4js.getLogger('request');
 logger.setLevel(config.loglevel);
-config.dbaddress = process.env.DB_PORT_27017_TCP_ADDR || 'localhost';
-//config.state = app.get('env');
+config.dbaddress = process.env.DB_PORT_27017_TCP_ADDR || config.dbaddress;
 if (config.dbaddress) {
     logger.info('config.dbaddress : ' + config.dbaddress);
 }
 else {
     logger.fatal('config.dbaddress NG.');
 }
-logger.info('-----------------------Invoke---------------------');
+alert_log({}, '-----------------------Invoke---------------------');
 alert_log(log4js, 'log4js');
 alert_log(express, 'express');
 alert_log(fs, 'fs');
@@ -58,7 +57,7 @@ alert_log(routes, 'routes');
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'jade');
-logger.info('Jade Start.');
+alert_log({}, 'Jade Start.');
 // uncomment after placing your favicon in /public
 //app.use(favicon(__dirname + '/public/favicon.ico'));
 app.use(bodyParser({ limit: '50mb' }));
@@ -70,12 +69,16 @@ alert_log(mongoose, 'mongoose');
 var MongoStore = require('connect-mongo')(session);
 alert_log(MongoStore, 'MongoStore');
 var options = { server: { socketOptions: { connectTimeoutMS: 1000000 } } };
-mongoose.connect("mongodb://" + config.dbaddress + "/" + config.db, options);
+var connection = "mongodb://" + config.dbuser + ":" + config.dbpassword + "@" + config.dbaddress + "/" + config.dbname;
+mongoose.connect(connection, options);
+process.on('uncaughtException', function (err) {
+    logger.error('Exception.' + err);
+});
 process.on('exit', function (code) {
-    logger.info('Stop.' + code);
+    logger.info("exit " + code);
 });
 process.on('SIGINT', function () {
-    logger.info('SIGINT.');
+    logger.info("SIGINT");
 });
 app.use(session({
     name: config.sessionName,
@@ -103,9 +106,12 @@ if (config.state === 'development') {
 }
 else {
     var rotatestream = require('logrotate-stream');
-    app.use(morgan({ format: 'combined', stream: rotatestream({ file: __dirname + '/logs/access.log', size: '100k', keep: 3 }) }));
+    app.use(morgan({
+        format: 'combined',
+        stream: rotatestream({ file: __dirname + '/logs/access.log', size: '100k', keep: 3 })
+    }));
 }
-logger.info('Access Log OK.');
+alert_log({}, 'Access Log');
 //var csrf = require('csurf');
 //app.use(csrf());
 app.use(express.static(path.join(__dirname, 'public')));
@@ -119,12 +125,7 @@ passport.deserializeUser(function (obj, done) {
 });
 var Account = require('./model/account');
 passport.use(new LocalStrategy(Account.authenticate()));
-if (Account) {
-    logger.info('Account Ok.');
-}
-else {
-    logger.fatal('Account NG.');
-}
+alert_log(Account, 'Account');
 //passport.serializeUser(Account.serializeUser());
 //passport.deserializeUser(Account.deserializeUser());
 //passport

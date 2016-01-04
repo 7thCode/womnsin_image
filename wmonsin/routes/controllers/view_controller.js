@@ -58,7 +58,7 @@ var ViewController = (function () {
                                 });
                             }
                             else {
-                                wrapper.SendResult(res, number + 1, message.already, {});
+                                wrapper.SendResult(res, number + 1, "already", {});
                             }
                         }
                         else {

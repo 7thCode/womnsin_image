@@ -49,11 +49,15 @@ var Wrapper = (function () {
                 logger.trace("|exit Guard ");
             }
             else {
-                this.SendWarn(res, 1, 'CSRF Attack.', {});
+                if (res) {
+                    this.SendWarn(res, 1, 'CSRF Attack.', {});
+                }
             }
         }
         catch (e) {
-            this.SendFatal(res, 100000, e.message, e);
+            if (res) {
+                this.SendFatal(res, 100000, e.message, e);
+            }
         }
     };
     Wrapper.prototype.Authenticate = function (req, res, code, callback) {
@@ -63,7 +67,9 @@ var Wrapper = (function () {
             logger.trace("|exit Authenticate " + code);
         }
         else {
-            this.SendWarn(res, code + 2, "Unacceptable", {});
+            if (res) {
+                this.SendWarn(res, code + 2, "Unacceptable", {});
+            }
         }
     };
     Wrapper.prototype.FindById = function (res, code, model, id, callback) {
@@ -80,7 +86,9 @@ var Wrapper = (function () {
                 }
             }
             else {
-                _this.SendError(res, code + 100, error.message, error);
+                if (res) {
+                    _this.SendError(res, code + 100, error.message, error);
+                }
             }
         });
     };
@@ -93,7 +101,9 @@ var Wrapper = (function () {
                 logger.trace("|exit FindOne " + code);
             }
             else {
-                _this.SendError(res, code + 100, error.message, error);
+                if (res) {
+                    _this.SendError(res, code + 100, error.message, error);
+                }
             }
         });
     };
@@ -111,7 +121,9 @@ var Wrapper = (function () {
                 }
             }
             else {
-                _this.SendError(res, code + 100, error.message, error);
+                if (res) {
+                    _this.SendError(res, code + 100, error.message, error);
+                }
             }
         });
     };
@@ -124,7 +136,9 @@ var Wrapper = (function () {
                 logger.trace("|exit Save " + code);
             }
             else {
-                _this.SendError(res, code + 100, error.message, error);
+                if (res) {
+                    _this.SendError(res, code + 100, error.message, error);
+                }
             }
         });
     };
@@ -137,7 +151,9 @@ var Wrapper = (function () {
                 logger.trace("|exit Remove " + code);
             }
             else {
-                _this.SendError(res, code + 100, error.message, error);
+                if (res) {
+                    _this.SendError(res, code + 100, error.message, error);
+                }
             }
         });
     };
@@ -148,7 +164,9 @@ var Wrapper = (function () {
             logger.trace("|exit If " + code);
         }
         else {
-            this.SendWarn(res, code + 1, "", {});
+            if (res) {
+                this.SendWarn(res, code + 1, "", {});
+            }
         }
     };
     Wrapper.prototype.SendWarn = function (res, code, message, object) {
