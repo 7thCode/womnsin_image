@@ -4,7 +4,7 @@
   "dbaddress": "localhost",
   "dbname": "patient",
   "user": "root",
-  "password": "root",
+  "password": "yubitatefuse",
   "sessionkey": "Daisy, Daisy.",
   "sessionName": "wmonsin",
   "key1": "Yes We therefore I think we",
