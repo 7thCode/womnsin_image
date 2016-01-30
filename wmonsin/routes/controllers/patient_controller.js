@@ -173,6 +173,17 @@ var PatientController = (function () {
             });
         });
     };
+    PatientController.prototype.get_api_key_patient_query_query = function (req, res) {
+        logger.trace("begin /api/:key/patient/query/:query");
+        var number = 5000;
+        wrapper.If(res, number, (config.key3 == req.params.key), function (res) {
+            var query = JSON.parse(decodeURIComponent(req.params.query));
+            wrapper.Find(res, number, PatientModel, query, {}, { sort: { Date: -1 } }, function (res, docs) {
+                wrapper.SendResult(res, 0, "OK", docs);
+                logger.trace("end /api/:key/patient/query/:query");
+            });
+        });
+    };
     return PatientController;
 })();
 module.exports = PatientController;

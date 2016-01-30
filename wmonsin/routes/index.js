@@ -400,6 +400,7 @@ router.get('/patient/count/:query', partient_controller.get_patient_count_query)
 router.get('/patient/status/:id', partient_controller.get_patient_status_id);
 router.put('/patient/status/:id', partient_controller.put_patient_status_id);
 router.put('/patient/information/:id', partient_controller.put_patient_information_id);
+router.get('/api/:key/patient/query/:query', partient_controller.get_api_key_patient_query_query);
 /*! account */
 router.post('/account/create', account_controller.post_account_create);
 router.post('/account/logout', account_controller.post_account_logout);

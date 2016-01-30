@@ -321,13 +321,15 @@ controllers.controller('PatientsController', ['$scope', '$state', '$stateParams'
                             }).then(function (answer) {
                                 var patient = new PatientAccept();
                                 patient.Input = {};
-                                patient.Information = { name: "", time: "", kana: "", insurance: "", patientid: "" };
+                                patient.Information = { name: "", time: "", kana: "", insurance: "", patientid: "", birthday: "", gender: "" };
                                 patient.Information.name = answer.items.name;
                                 var now = new Date();
                                 var hour = ("0" + now.getHours()).slice(-2); // 時
                                 var min = ("0" + now.getMinutes()).slice(-2); // 分
                                 var sec = ("0" + now.getSeconds()).slice(-2); // 秒
                                 patient.Information.time = hour + ':' + min + ':' + sec;
+                                patient.Information.birthday = "1990/1/01";
+                                patient.Information.gender = "";
                                 answer.items.kana = answer.items.kana.replace(/[ぁ-ん]/g, function (s) {
                                     return String.fromCharCode(s.charCodeAt(0) + 0x60);
                                 });
@@ -453,8 +455,11 @@ controllers.controller('DescriptionController', ['$scope', '$mdBottomSheet', '$m
                                     });
                                 }
                                 $scope.Input.push(value);
-                                $scope.Information = data.value.Information;
                             });
+                            var d = new Date();
+                            d.setTime(Date.parse(data.value.Information.birthday));
+                            $scope.birthday = d;
+                            $scope.Information = data.value.Information;
                         }
                         else {
                             $mdToast.show($mdToast.simple().content(data.message));
@@ -499,6 +504,8 @@ controllers.controller('DescriptionController', ['$scope', '$mdBottomSheet', '$m
                 patientinformation.kana = $scope.Information.kana;
                 patientinformation.insurance = $scope.Information.insurance;
                 patientinformation.patientid = $scope.Information.patientid;
+                patientinformation.birthday = $scope.birthday.toDateString(); //  $scope.Information.birthday;
+                patientinformation.gender = $scope.Information.gender;
                 patientinformation.$update({ id: CurrentPatient.id }, function (result) {
                     $mdToast.show($mdToast.simple().content("OK."));
                 });
